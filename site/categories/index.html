@@ -4,12 +4,12 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>카테고리 | Trend Desk</title>
-  <meta name="description" content="Trend Desk의 카테고리별 글 모음 페이지입니다.">
+  <meta name="description" content="Trend Desk의 카테고리 목록입니다.">
   <meta name="robots" content="index,follow,max-image-preview:large">
   <link rel="canonical" href="https://serendip811.github.io/trend-desk-blog/categories/index.html">
   <meta property="og:type" content="website">
   <meta property="og:title" content="카테고리 | Trend Desk">
-  <meta property="og:description" content="정책 · 생활정보, 여행, 디지털 서비스 카테고리를 탐색할 수 있습니다.">
+  <meta property="og:description" content="Trend Desk의 카테고리 목록입니다.">
   <meta property="og:url" content="https://serendip811.github.io/trend-desk-blog/categories/index.html">
   <meta property="og:image" content="https://serendip811.github.io/trend-desk-blog/assets/og-cover.svg">
   <link rel="icon" href="../assets/favicon.svg" type="image/svg+xml">
@@ -20,48 +20,53 @@
   <link rel="stylesheet" href="../styles.css">
 </head>
 <body>
-  <div class="site-shell">
-    <header class="topbar">
-      <a class="brand" href="../index.html">Trend Desk</a>
-      <nav class="nav" aria-label="주요 메뉴">
+  <div class="layout-shell">
+    <header class="site-header">
+      <div class="site-header-top">
+        <a class="site-title" href="../index.html">Trend Desk</a>
+        <p class="site-tagline">생활에 바로 도움이 되는 정보를 차분하게 정리합니다.</p>
+      </div>
+      <nav class="site-nav" aria-label="주요 메뉴">
         <a href="../index.html">홈</a>
-        <a href="../archive.html">아카이브</a>
+        <a href="../archive.html">글 목록</a>
         <a href="index.html" aria-current="page">카테고리</a>
         <a href="../rss.xml">RSS</a>
       </nav>
     </header>
 
-    <main>
-      <section class="page-intro">
-        <p class="section-kicker">카테고리</p>
-        <h1>카테고리 탐색</h1>
-        <p>관심 있는 주제부터 바로 찾아볼 수 있도록 카테고리별로 정리합니다.</p>
+    <main class="content-wrap">
+      <section class="page-head compact-head">
+        <p class="page-kicker">카테고리</p>
+        <h1>주제별 보기</h1>
       </section>
 
-      <div class="category-grid">
-        <a class="category-card" href="policy.html">
-          <h2>정책 · 생활정보</h2>
-          <p>신청 기간, 지원 대상, 혜택, 사용법처럼 실용적인 한국어 검색 수요를 반영하는 글 모음입니다.</p>
-          <span>1개 글</span>
-        </a>
-        <div class="category-card category-card-muted">
+      <section class="feed-section">
+        <article class="feed-item category-feed-item">
+          <div class="feed-meta"><span class="feed-category">1개 글</span></div>
+          <h2><a href="policy.html">정책 · 생활정보</a></h2>
+          <p class="feed-summary">신청 기간, 지원 대상, 혜택 정리처럼 생활에 바로 필요한 정보를 모아둔 카테고리입니다.</p>
+        </article>
+        <article class="feed-item category-feed-item muted-item">
+          <div class="feed-meta"><span>준비 중</span></div>
           <h2>여행</h2>
-          <p>계절형 이동 정보, 교통 혜택, 일정 준비 정보가 들어갈 예정입니다.</p>
-          <span>준비 중</span>
-        </div>
-        <div class="category-card category-card-muted">
+          <p class="feed-summary">교통 혜택, 계절별 여행 정보, 이동 관련 정리 글이 들어갈 예정입니다.</p>
+        </article>
+        <article class="feed-item category-feed-item muted-item">
+          <div class="feed-meta"><span>준비 중</span></div>
           <h2>디지털 서비스</h2>
-          <p>요금제, 멤버십, 디지털 사용법, 비교형 정리 글이 들어갈 예정입니다.</p>
-          <span>준비 중</span>
-        </div>
-      </div>
+          <p class="feed-summary">요금제, 멤버십, 사용법, 비교형 정리 글이 들어갈 예정입니다.</p>
+        </article>
+      </section>
     </main>
 
-    <footer class="site-footer">
-      <p>Trend Desk · 검색형 생활 정보 아카이브</p>
-      <div class="footer-links">
+    <footer class="site-footer-simple">
+      <div>
+        <strong>Trend Desk</strong>
+        <p>생활에 바로 연결되는 정보와 정리를 차곡차곡 기록합니다.</p>
+      </div>
+      <div class="footer-links-simple">
         <a href="../index.html">홈</a>
-        <a href="../archive.html">아카이브</a>
+        <a href="../archive.html">글 목록</a>
         <a href="../rss.xml">RSS</a>
       </div>
     </footer>
