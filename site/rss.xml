@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0">
+  <channel>
+    <title>Trend Desk</title>
+    <link>https://serendip811.github.io/trend-desk-blog/</link>
+    <description>지원 제도, 생활 정보, 여행, 디지털 서비스처럼 한국어 검색 수요가 큰 주제를 정리하는 블로그</description>
+    <language>ko-kr</language>
+    <lastBuildDate>Wed, 18 Mar 2026 00:00:00 GMT</lastBuildDate>
+    <atom:link href="https://serendip811.github.io/trend-desk-blog/rss.xml" rel="self" type="application/rss+xml" xmlns:atom="http://www.w3.org/2005/Atom" />
+    <item>
+      <title>2026 교육급여 교육비 신청 정리, 새학기 전에 꼭 확인하세요</title>
+      <link>https://serendip811.github.io/trend-desk-blog/posts/education-support-2026.html</link>
+      <guid>https://serendip811.github.io/trend-desk-blog/posts/education-support-2026.html</guid>
+      <pubDate>Wed, 18 Mar 2026 00:00:00 GMT</pubDate>
+      <description>집중 신청 기간, 지원 대상, 교육급여와 교육비 차이, 복지로와 교육비 원클릭 신청 경로를 공식 자료 기준으로 정리한 글입니다.</description>
+      <category>정책 · 생활정보</category>
+    </item>
+  </channel>
+</rss>
