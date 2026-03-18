@@ -1,0 +1,5 @@
+data/raw/
+outputs/
+__pycache__/
+.npm-cache/
+.playwright-browsers/
