@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630" role="img" aria-label="Trend Desk social cover">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#f7efe5"/>
+      <stop offset="100%" stop-color="#efe2d3"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="630" fill="url(#bg)"/>
+  <circle cx="1030" cy="120" r="120" fill="#e8c5ad" opacity="0.6"/>
+  <circle cx="150" cy="520" r="160" fill="#f1d8c7" opacity="0.8"/>
+  <rect x="80" y="76" width="1040" height="478" rx="36" fill="#fffaf4" stroke="#d8c6b8"/>
+  <text x="120" y="182" fill="#9b4e2a" font-family="Arial, sans-serif" font-size="28" font-weight="700" letter-spacing="4">TREND DESK</text>
+  <text x="120" y="286" fill="#1f2328" font-family="Arial, sans-serif" font-size="60" font-weight="700">검색되는 생활 정보와</text>
+  <text x="120" y="362" fill="#1f2328" font-family="Arial, sans-serif" font-size="60" font-weight="700">트렌드를 정리하는 블로그</text>
+  <text x="120" y="438" fill="#6c6a63" font-family="Arial, sans-serif" font-size="28">지원 제도 · 생활 정보 · 여행 · 디지털 서비스</text>
+  <text x="120" y="488" fill="#6c6a63" font-family="Arial, sans-serif" font-size="28">공식 자료 캡처와 함께 읽기 쉽게 정리</text>
+</svg>
