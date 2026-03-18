@@ -1,0 +1,47 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 720" role="img" aria-labelledby="title desc">
+  <title id="title">ChatGPT pricing guide illustration</title>
+  <desc id="desc">Illustration of pricing cards for ChatGPT plans.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#f8efe4" />
+      <stop offset="100%" stop-color="#f2dcc7" />
+    </linearGradient>
+    <linearGradient id="card" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#fffdf8" />
+      <stop offset="100%" stop-color="#f9f3ea" />
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="720" fill="url(#bg)" rx="36" />
+  <circle cx="185" cy="130" r="120" fill="#efd5c7" opacity="0.8" />
+  <circle cx="1040" cy="580" r="150" fill="#e9c2ad" opacity="0.45" />
+  <rect x="110" y="115" width="980" height="490" rx="34" fill="#fffaf3" opacity="0.94" />
+  <text x="170" y="200" font-family="SUIT, Arial, sans-serif" font-size="28" font-weight="700" fill="#a24f2a">DIGITAL GUIDE</text>
+  <text x="170" y="255" font-family="Noto Serif KR, Georgia, serif" font-size="56" font-weight="700" fill="#1f2328">ChatGPT 요금제 비교</text>
+  <text x="170" y="305" font-family="SUIT, Arial, sans-serif" font-size="28" fill="#5f5a53">무료부터 Pro까지, 내 사용량에 맞게 고르는 체크포인트</text>
+
+  <g transform="translate(165 370)">
+    <rect width="180" height="150" rx="24" fill="url(#card)" stroke="#d7b9a6" />
+    <text x="24" y="42" font-family="SUIT, Arial, sans-serif" font-size="24" font-weight="700" fill="#a24f2a">Free</text>
+    <text x="24" y="82" font-family="SUIT, Arial, sans-serif" font-size="22" fill="#1f2328">가볍게 시작</text>
+    <text x="24" y="118" font-family="SUIT, Arial, sans-serif" font-size="18" fill="#6c6a63">질문량이 적고 체험 위주</text>
+  </g>
+  <g transform="translate(375 345)">
+    <rect width="180" height="175" rx="24" fill="#fff8ef" stroke="#a24f2a" stroke-width="3" />
+    <text x="24" y="42" font-family="SUIT, Arial, sans-serif" font-size="24" font-weight="700" fill="#a24f2a">Plus</text>
+    <text x="24" y="82" font-family="SUIT, Arial, sans-serif" font-size="22" fill="#1f2328">개인 생산성</text>
+    <text x="24" y="118" font-family="SUIT, Arial, sans-serif" font-size="18" fill="#6c6a63">업무, 파일, 이미지 활용</text>
+    <text x="24" y="148" font-family="SUIT, Arial, sans-serif" font-size="18" fill="#6c6a63">가장 많이 비교되는 구간</text>
+  </g>
+  <g transform="translate(585 370)">
+    <rect width="180" height="150" rx="24" fill="url(#card)" stroke="#d7b9a6" />
+    <text x="24" y="42" font-family="SUIT, Arial, sans-serif" font-size="24" font-weight="700" fill="#a24f2a">Pro</text>
+    <text x="24" y="82" font-family="SUIT, Arial, sans-serif" font-size="22" fill="#1f2328">고사용량</text>
+    <text x="24" y="118" font-family="SUIT, Arial, sans-serif" font-size="18" fill="#6c6a63">무거운 작업과 우선 속도</text>
+  </g>
+  <g transform="translate(795 370)">
+    <rect width="180" height="150" rx="24" fill="url(#card)" stroke="#d7b9a6" />
+    <text x="24" y="42" font-family="SUIT, Arial, sans-serif" font-size="24" font-weight="700" fill="#a24f2a">Business</text>
+    <text x="24" y="82" font-family="SUIT, Arial, sans-serif" font-size="22" fill="#1f2328">팀 협업</text>
+    <text x="24" y="118" font-family="SUIT, Arial, sans-serif" font-size="18" fill="#6c6a63">관리 기능과 보안 옵션</text>
+  </g>
+</svg>
