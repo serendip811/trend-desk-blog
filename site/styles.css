@@ -69,6 +69,7 @@ a {
   padding: 16px 22px;
   margin-bottom: 24px;
   backdrop-filter: blur(10px);
+  border-radius: 18px;
 }
 
 .brand {
@@ -82,12 +83,11 @@ a {
 .nav {
   display: flex;
   flex-wrap: wrap;
-  gap: 10px;
+  gap: 18px;
 }
 
 .nav a {
   padding: 8px 0;
-  border-radius: 999px;
   text-decoration: none;
   color: var(--muted);
   font-weight: 600;
@@ -106,6 +106,7 @@ a {
   gap: 24px;
   padding: 48px 42px;
   position: relative;
+  border-radius: 18px;
 }
 
 .hero-panel::after,
@@ -202,7 +203,7 @@ h3 {
 .hero-note,
 .hero-mini-card {
   padding: 22px;
-  border-radius: 8px;
+  border-radius: 14px;
   background: var(--paper-strong);
   border: 1px solid var(--line);
 }
@@ -265,7 +266,7 @@ main {
   height: 100%;
   object-fit: cover;
   min-height: 420px;
-  border-radius: 10px 0 0 10px;
+  border-radius: 16px 0 0 16px;
 }
 
 .feature-body,
@@ -277,6 +278,17 @@ main {
 .sidebar-card,
 .info-card {
   padding: 28px;
+}
+
+.feature-card,
+.archive-item,
+.category-card,
+.page-intro,
+.article-hero,
+.article-body,
+.sidebar-card,
+.info-card {
+  border-radius: 16px;
 }
 
 .post-category,
@@ -321,6 +333,10 @@ main {
   display: grid;
   grid-template-columns: repeat(3, minmax(0, 1fr));
   gap: 16px;
+}
+
+.info-grid {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
 }
 
 .category-card {
@@ -493,7 +509,7 @@ main {
 
   .feature-media img {
     min-height: 320px;
-    border-radius: 10px 10px 0 0;
+    border-radius: 16px 16px 0 0;
   }
 
   .article-sidebar {
