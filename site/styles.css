@@ -1,0 +1,269 @@
+:root {
+  --bg: #f5f0e8;
+  --paper: #fffdf8;
+  --ink: #1f2328;
+  --muted: #6c6a63;
+  --accent: #a24f2a;
+  --accent-soft: #efd5c7;
+  --line: rgba(31, 35, 40, 0.12);
+  --shadow: 0 24px 60px rgba(86, 62, 41, 0.12);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: "SUIT", sans-serif;
+  color: var(--ink);
+  background:
+    radial-gradient(circle at top left, rgba(239, 213, 199, 0.8), transparent 28%),
+    linear-gradient(180deg, #f7efe5 0%, #f4f1ea 100%);
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+a {
+  color: inherit;
+}
+
+.page-shell,
+.article-shell {
+  width: min(1120px, calc(100% - 32px));
+  margin: 0 auto;
+  padding: 32px 0 72px;
+}
+
+.hero,
+.article-hero {
+  background: rgba(255, 253, 248, 0.84);
+  border: 1px solid rgba(162, 79, 42, 0.12);
+  box-shadow: var(--shadow);
+  border-radius: 28px;
+}
+
+.hero {
+  display: grid;
+  grid-template-columns: 1.4fr 0.8fr;
+  gap: 24px;
+  padding: 40px;
+  align-items: end;
+}
+
+.eyebrow,
+.section-kicker,
+.article-kicker,
+.sidebar-label,
+.hero-card-label {
+  margin: 0 0 12px;
+  text-transform: uppercase;
+  letter-spacing: 0.14em;
+  font-size: 12px;
+  font-weight: 700;
+  color: var(--accent);
+}
+
+h1,
+h2,
+h3 {
+  font-family: "Noto Serif KR", serif;
+  line-height: 1.28;
+  margin: 0;
+}
+
+.hero h1,
+.article-hero h1 {
+  font-size: clamp(32px, 5vw, 56px);
+}
+
+.hero-text,
+.article-lead,
+.post-card-body p,
+.article-body p,
+.article-body li,
+.hero-card-note,
+.sidebar-card li {
+  color: var(--muted);
+  line-height: 1.8;
+}
+
+.hero-card,
+.post-card,
+.sidebar-card,
+.article-body figure {
+  background: var(--paper);
+  border: 1px solid var(--line);
+  border-radius: 24px;
+  box-shadow: var(--shadow);
+}
+
+.hero-card {
+  padding: 24px;
+}
+
+.hero-card-value {
+  margin: 0 0 8px;
+  font-size: 42px;
+  font-weight: 700;
+}
+
+main {
+  margin-top: 28px;
+}
+
+.section-head {
+  margin-bottom: 16px;
+}
+
+.section-head h2 {
+  font-size: 30px;
+}
+
+.post-card-link {
+  display: grid;
+  grid-template-columns: 0.95fr 1.05fr;
+  text-decoration: none;
+}
+
+.post-card-media img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 24px 0 0 24px;
+}
+
+.post-card-body {
+  padding: 28px;
+}
+
+.post-meta,
+.back-link {
+  font-size: 14px;
+  font-weight: 700;
+  color: var(--accent);
+}
+
+.post-card h3 {
+  margin-top: 10px;
+  font-size: 32px;
+}
+
+.post-cta {
+  display: inline-block;
+  margin-top: 18px;
+  padding: 10px 16px;
+  border-radius: 999px;
+  background: var(--accent-soft);
+  color: var(--accent);
+  font-weight: 700;
+}
+
+.article-hero {
+  padding: 36px 40px;
+}
+
+.back-link {
+  text-decoration: none;
+}
+
+.article-layout {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) 300px;
+  gap: 24px;
+  align-items: start;
+}
+
+.article-body {
+  background: rgba(255, 253, 248, 0.9);
+  border: 1px solid var(--line);
+  border-radius: 28px;
+  padding: 36px;
+  box-shadow: var(--shadow);
+}
+
+.article-body h2 {
+  margin-top: 36px;
+  margin-bottom: 14px;
+  font-size: 30px;
+}
+
+.article-body h3 {
+  margin-top: 22px;
+  margin-bottom: 10px;
+  font-size: 23px;
+}
+
+.article-body ul {
+  padding-left: 22px;
+}
+
+.article-body figure {
+  margin: 28px 0;
+  overflow: hidden;
+}
+
+.article-body figure img {
+  width: 100%;
+}
+
+.article-body figcaption {
+  padding: 12px 16px 16px;
+  color: var(--muted);
+  font-size: 14px;
+}
+
+.article-sidebar {
+  display: grid;
+  gap: 16px;
+  position: sticky;
+  top: 20px;
+}
+
+.sidebar-card {
+  padding: 20px;
+}
+
+.sidebar-card ul {
+  margin: 0;
+  padding-left: 18px;
+}
+
+@media (max-width: 920px) {
+  .hero,
+  .post-card-link,
+  .article-layout {
+    grid-template-columns: 1fr;
+  }
+
+  .post-card-media img {
+    border-radius: 24px 24px 0 0;
+  }
+
+  .article-sidebar {
+    position: static;
+  }
+}
+
+@media (max-width: 640px) {
+  .page-shell,
+  .article-shell {
+    width: min(100% - 20px, 1120px);
+    padding-top: 18px;
+  }
+
+  .hero,
+  .article-hero,
+  .article-body,
+  .post-card-body {
+    padding: 22px;
+  }
+
+  .post-card h3,
+  .article-body h2 {
+    font-size: 26px;
+  }
+}
