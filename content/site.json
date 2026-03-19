@@ -1,0 +1,34 @@
+{
+  "site_title": "Trend Desk",
+  "base_url": "https://serendip811.github.io/trend-desk-blog",
+  "tagline": "생활에 바로 도움이 되는 정보를 차분하게 정리합니다.",
+  "footer_text": "생활에 바로 연결되는 정보와 정리를 차곡차곡 기록합니다.",
+  "default_description": "지원 제도, 생활 정보, 여행, 디지털 서비스처럼 한국어 검색 수요가 큰 주제를 정리하는 블로그",
+  "default_og_image": "assets/og-cover.svg",
+  "home_kicker": "Trend Desk Feed",
+  "home_title": "지금 읽을 만한 생활 정보와 실사용 가이드를 빠르게 훑는 피드",
+  "home_description": "GeekNews처럼 리스트 중심으로 최근 글을 바로 확인하고, 필요한 글만 들어가서 자세히 읽을 수 있게 구성했습니다.",
+  "categories": [
+    {
+      "slug": "policy",
+      "name": "정책 · 생활정보",
+      "feed_label": "정책 · 생활정보",
+      "description": "신청 기간, 지원 대상, 혜택 정리처럼 생활에 바로 필요한 정보를 모아둡니다.",
+      "coming_soon": false
+    },
+    {
+      "slug": "digital-services",
+      "name": "디지털 서비스",
+      "feed_label": "디지털 · 사용법",
+      "description": "요금제, 멤버십, 사용법, 비교형 정리처럼 실사용 기준의 글을 모아둡니다.",
+      "coming_soon": false
+    },
+    {
+      "slug": "travel",
+      "name": "여행",
+      "feed_label": "여행",
+      "description": "교통 혜택, 계절별 여행 정보, 이동 관련 정리 글이 들어갈 예정입니다.",
+      "coming_soon": true
+    }
+  ]
+}

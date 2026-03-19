@@ -4,58 +4,76 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Trend Desk</title>
-  <meta name="description" content="생활 정보, 지원 제도, 여행, 디지털 서비스 트렌드를 정리하는 개인 아카이브">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+KR:wght@500;700&family=SUIT:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <meta name="description" content="지원 제도, 생활 정보, 여행, 디지털 서비스처럼 한국어 검색 수요가 큰 주제를 정리하는 블로그">
+  <meta name="robots" content="index,follow,max-image-preview:large">
+  <link rel="canonical" href="https://serendip811.github.io/trend-desk-blog/">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Trend Desk">
+  <meta property="og:description" content="지원 제도, 생활 정보, 여행, 디지털 서비스처럼 한국어 검색 수요가 큰 주제를 정리하는 블로그">
+  <meta property="og:url" content="https://serendip811.github.io/trend-desk-blog/">
+  <meta property="og:site_name" content="Trend Desk">
+  <meta property="og:locale" content="ko_KR">
+  <meta property="og:image" content="https://serendip811.github.io/trend-desk-blog/assets/og-cover.svg">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Trend Desk">
+  <meta name="twitter:description" content="지원 제도, 생활 정보, 여행, 디지털 서비스처럼 한국어 검색 수요가 큰 주제를 정리하는 블로그">
+  <meta name="twitter:image" content="https://serendip811.github.io/trend-desk-blog/assets/og-cover.svg">
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <div class="page-shell">
-    <header class="hero">
-      <div class="hero-copy">
-        <p class="eyebrow">Trend Desk</p>
-        <h1>검색되는 생활 정보와 트렌드를 차분하게 쌓는 블로그</h1>
-        <p class="hero-text">지원 제도, 여행, 실용 서비스, 디지털 사용법처럼 사람들이 실제로 찾는 주제를 공식 자료와 함께 정리합니다.</p>
+  <div class="layout-shell">
+    <header class="site-header">
+      <div class="site-header-top">
+        <a class="site-title" href="index.html">Trend Desk</a>
+        <p class="site-tagline">생활에 바로 도움이 되는 정보를 차분하게 정리합니다.</p>
       </div>
-      <div class="hero-card">
-        <p class="hero-card-label">현재 아카이브</p>
-        <p class="hero-card-value">2 posts</p>
-        <p class="hero-card-note">공식 페이지 캡처와 함께 읽기 쉽게 정리한 실용형 글</p>
-      </div>
+      <nav class="site-nav" aria-label="주요 메뉴">
+        <a href="index.html" aria-current="page">홈</a> <a href="archive.html">글 목록</a> <a href="categories/index.html">카테고리</a> <a href="rss.xml">RSS</a>
+      </nav>
     </header>
 
-    <main>
-      <section class="section-head" id="latest">
-        <p class="section-kicker">Latest</p>
-        <h2>최근 글</h2>
+    <main class="content-wrap">
+      <section class="page-head">
+        <p class="page-kicker">Trend Desk Feed</p>
+        <h1>지금 읽을 만한 생활 정보와 실사용 가이드를 빠르게 훑는 피드</h1>
+        <p class="page-desc">GeekNews처럼 리스트 중심으로 최근 글을 바로 확인하고, 필요한 글만 들어가서 자세히 읽을 수 있게 구성했습니다.</p>
       </section>
 
-      <article class="post-card">
-        <a class="post-card-link post-card-link-text" href="posts/chatgpt-pricing-guide-2026.html">
-          <div class="post-card-body">
-            <p class="post-meta">디지털 · 사용법</p>
-            <h3>ChatGPT 요금제 비교 정리, 무료와 유료 중 무엇을 고르면 될까</h3>
-            <p>무료, Go, Plus, Pro, Business, Enterprise까지 현재 공개된 플랜 구성과 선택 기준을 이전 글 구조에 맞춰 정리했습니다.</p>
-            <span class="post-cta">글 읽기</span>
-          </div>
-        </a>
-      </article>
+      <section class="feed-section" id="latest">
+        <article class="feed-item">
+                <div class="feed-main">
+                  <h2><a href="posts/education-support-2026.html">2026 교육급여 교육비 신청 정리, 새학기 전에 꼭 확인하세요</a></h2>
+                  <p class="feed-summary">집중 신청 기간, 지원 대상, 교육급여와 교육비 차이, 복지로와 교육비 원클릭 신청 경로를 공식 자료 기준으로 정리한 글입니다.</p>
+                  <div class="feed-meta">
+                    <span class="feed-category">정책 · 생활정보</span> <span>2026-03-18</span> <a href="categories/policy.html">카테고리 보기</a>
+                  </div>
+                </div>
+              </article>
 
-      <article class="post-card">
-        <a class="post-card-link" href="posts/education-support-2026.html">
-          <div class="post-card-media">
-            <img src="assets/bokjiro-education-support.png" alt="복지로 교육급여 교육비 신청 안내 화면">
-          </div>
-          <div class="post-card-body">
-            <p class="post-meta">정책 · 생활정보</p>
-            <h3>2026 교육급여 교육비 신청 정리, 새학기 전에 꼭 확인하세요</h3>
-            <p>집중 신청 기간, 대상, 교육급여와 교육비 차이, 복지로/교육비 원클릭 신청 경로까지 공식 자료 중심으로 정리했습니다.</p>
-            <span class="post-cta">글 읽기</span>
-          </div>
-        </a>
-      </article>
+        <article class="feed-item">
+                <div class="feed-main">
+                  <h2><a href="posts/chatgpt-pricing-guide-2026.html">ChatGPT 요금제 비교 정리, 무료와 유료 중 무엇을 고르면 될까</a></h2>
+                  <p class="feed-summary">Free, Go, Plus, Pro, Business, Enterprise 차이와 어떤 사용자에게 맞는지 실사용 기준으로 정리했습니다.</p>
+                  <div class="feed-meta">
+                    <span class="feed-category">디지털 · 사용법</span> <span>2026-03-18</span> <a href="categories/digital-services.html">카테고리 보기</a>
+                  </div>
+                </div>
+              </article>
+      </section>
     </main>
+
+    <footer class="site-footer-simple">
+      <div>
+        <strong>Trend Desk</strong>
+        <p>생활에 바로 연결되는 정보와 정리를 차곡차곡 기록합니다.</p>
+      </div>
+      <div class="footer-links-simple">
+        <a href="archive.html">글 목록</a>
+        <a href="categories/index.html">카테고리</a>
+        <a href="rss.xml">RSS</a>
+      </div>
+    </footer>
   </div>
 </body>
 </html>

@@ -11,12 +11,14 @@
   <meta property="og:title" content="글 목록 | Trend Desk">
   <meta property="og:description" content="Trend Desk에 올라온 전체 글 목록입니다.">
   <meta property="og:url" content="https://serendip811.github.io/trend-desk-blog/archive.html">
+  <meta property="og:site_name" content="Trend Desk">
+  <meta property="og:locale" content="ko_KR">
   <meta property="og:image" content="https://serendip811.github.io/trend-desk-blog/assets/og-cover.svg">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="글 목록 | Trend Desk">
+  <meta name="twitter:description" content="Trend Desk에 올라온 전체 글 목록입니다.">
+  <meta name="twitter:image" content="https://serendip811.github.io/trend-desk-blog/assets/og-cover.svg">
   <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+KR:wght@500;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" as="style" crossorigin href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/static/pretendard.css">
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
@@ -27,10 +29,7 @@
         <p class="site-tagline">생활에 바로 도움이 되는 정보를 차분하게 정리합니다.</p>
       </div>
       <nav class="site-nav" aria-label="주요 메뉴">
-        <a href="index.html">홈</a>
-        <a href="archive.html" aria-current="page">글 목록</a>
-        <a href="categories/index.html">카테고리</a>
-        <a href="rss.xml">RSS</a>
+        <a href="index.html">홈</a> <a href="archive.html" aria-current="page">글 목록</a> <a href="categories/index.html">카테고리</a> <a href="rss.xml">RSS</a>
       </nav>
     </header>
 
@@ -42,22 +41,24 @@
 
       <section class="feed-section">
         <article class="feed-item">
-          <div class="feed-meta">
-            <span class="feed-category">디지털 서비스</span>
-            <span>2026-03-18</span>
-          </div>
-          <h2><a href="posts/chatgpt-pricing-guide-2026.html">ChatGPT 요금제 비교 정리, 무료와 유료 중 무엇을 고르면 될까</a></h2>
-          <p class="feed-summary">Free, Go, Plus, Pro, Business, Enterprise 차이와 어떤 사용자에게 맞는지 실사용 기준으로 정리했습니다.</p>
-        </article>
+                <div class="feed-main">
+                  <h2><a href="posts/education-support-2026.html">2026 교육급여 교육비 신청 정리, 새학기 전에 꼭 확인하세요</a></h2>
+                  <p class="feed-summary">집중 신청 기간, 지원 대상, 교육급여와 교육비 차이, 복지로와 교육비 원클릭 신청 경로를 공식 자료 기준으로 정리한 글입니다.</p>
+                  <div class="feed-meta">
+                    <span class="feed-category">정책 · 생활정보</span> <span>2026-03-18</span>
+                  </div>
+                </div>
+              </article>
 
         <article class="feed-item">
-          <div class="feed-meta">
-            <span class="feed-category">정책 · 생활정보</span>
-            <span>2026-03-18</span>
-          </div>
-          <h2><a href="posts/education-support-2026.html">2026 교육급여 교육비 신청 정리, 새학기 전에 꼭 확인하세요</a></h2>
-          <p class="feed-summary">집중 신청 기간, 지원 대상, 교육급여와 교육비 차이, 복지로와 교육비 원클릭 신청 경로까지 공식 자료 기준으로 정리했습니다.</p>
-        </article>
+                <div class="feed-main">
+                  <h2><a href="posts/chatgpt-pricing-guide-2026.html">ChatGPT 요금제 비교 정리, 무료와 유료 중 무엇을 고르면 될까</a></h2>
+                  <p class="feed-summary">Free, Go, Plus, Pro, Business, Enterprise 차이와 어떤 사용자에게 맞는지 실사용 기준으로 정리했습니다.</p>
+                  <div class="feed-meta">
+                    <span class="feed-category">디지털 · 사용법</span> <span>2026-03-18</span>
+                  </div>
+                </div>
+              </article>
       </section>
     </main>
 
@@ -67,7 +68,7 @@
         <p>생활에 바로 연결되는 정보와 정리를 차곡차곡 기록합니다.</p>
       </div>
       <div class="footer-links-simple">
-        <a href="index.html">홈</a>
+        <a href="archive.html">글 목록</a>
         <a href="categories/index.html">카테고리</a>
         <a href="rss.xml">RSS</a>
       </div>
