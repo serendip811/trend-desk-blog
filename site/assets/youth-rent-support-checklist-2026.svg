@@ -1,0 +1,56 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 720" role="img" aria-labelledby="title desc">
+  <title id="title">청년월세 지원 신청 체크리스트</title>
+  <desc id="desc">정책브리핑과 복지로를 함께 확인한 뒤 신청 기간, 자격 조건, 서류를 점검하는 흐름을 보여주는 설명 이미지</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" x2="1" y1="0" y2="1">
+      <stop offset="0%" stop-color="#f4f7ff"/>
+      <stop offset="100%" stop-color="#eef6ef"/>
+    </linearGradient>
+    <linearGradient id="card" x1="0" x2="1" y1="0" y2="1">
+      <stop offset="0%" stop-color="#ffffff"/>
+      <stop offset="100%" stop-color="#fbfcff"/>
+    </linearGradient>
+    <style>
+      .title { font: 700 42px/1.2 sans-serif; fill: #14213d; }
+      .subtitle { font: 400 22px/1.5 sans-serif; fill: #4a5568; }
+      .label { font: 700 24px/1.2 sans-serif; fill: #14213d; }
+      .body { font: 400 20px/1.5 sans-serif; fill: #344054; }
+      .small { font: 600 18px/1.4 sans-serif; fill: #6b7280; letter-spacing: .02em; }
+      .chip { font: 700 18px/1 sans-serif; fill: #0f5132; }
+    </style>
+  </defs>
+
+  <rect width="1200" height="720" rx="36" fill="url(#bg)"/>
+  <circle cx="1045" cy="122" r="88" fill="#dfe7ff" opacity=".8"/>
+  <circle cx="146" cy="606" r="110" fill="#dff0e3" opacity=".75"/>
+
+  <text x="80" y="105" class="title">청년월세 지원 신청 체크리스트</text>
+  <text x="80" y="150" class="subtitle">공식 링크 2개를 먼저 열고, 조건과 서류를 순서대로 확인하세요.</text>
+
+  <rect x="80" y="210" width="1040" height="380" rx="28" fill="url(#card)" stroke="#d9e2ef"/>
+
+  <rect x="120" y="270" width="280" height="240" rx="24" fill="#eef6ff" stroke="#c9d9f5"/>
+  <text x="150" y="320" class="label">1. 공식 링크 확인</text>
+  <text x="150" y="360" class="body">정책브리핑 카드뉴스</text>
+  <text x="150" y="398" class="body">복지로 상세 페이지</text>
+  <text x="150" y="452" class="small">최신 안내부터 다시 보기</text>
+
+  <rect x="460" y="270" width="280" height="240" rx="24" fill="#f0fbf2" stroke="#c8e7d0"/>
+  <text x="490" y="320" class="label">2. 자격 조건 점검</text>
+  <text x="490" y="360" class="body">연령</text>
+  <text x="590" y="360" class="body">무주택</text>
+  <text x="490" y="398" class="body">별도 거주</text>
+  <text x="590" y="398" class="body">소득·재산</text>
+  <text x="490" y="452" class="small">청년가구와 원가구를 구분</text>
+
+  <rect x="800" y="270" width="280" height="240" rx="24" fill="#fff6e8" stroke="#f4d9aa"/>
+  <text x="830" y="320" class="label">3. 서류 준비</text>
+  <text x="830" y="360" class="body">계약서</text>
+  <text x="930" y="360" class="body">거주 확인</text>
+  <text x="830" y="398" class="body">소득 자료</text>
+  <text x="930" y="398" class="body">추가 서류</text>
+  <text x="830" y="452" class="small">신청 직전 다시 대조</text>
+
+  <rect x="400" y="610" width="400" height="56" rx="28" fill="#14213d"/>
+  <text x="600" y="647" text-anchor="middle" class="chip">정책브리핑 → 복지로 → 내 조건 확인</text>
+</svg>

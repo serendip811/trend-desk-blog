@@ -35,6 +35,44 @@ The blog itself now uses a small static-site generator:
 2. Put front matter at the top
 3. Write the article body as HTML below it
 
+### Writing rules
+
+- Use the pipeline for topic discovery, not as the publishable source of truth.
+- When a post depends on a current topic, start from the latest official page you can verify:
+  - government announcements
+  - company pricing/help pages
+  - service detail pages
+  - official campaign/event pages
+- Prefer facts a reader can re-check directly from searchable public pages.
+- Include exact source dates in the article when timeliness matters.
+- Add the official source links to the article body, usually in the bottom links section.
+- If dates, prices, eligibility, or benefits may change, say so explicitly and tell readers to re-check the latest official page.
+- Do not cite internal process in the article body. Avoid phrases like `로컬 파이프라인`, `초안`, or similar production notes.
+- Use news or trend reports only as the hook. Durable sections should still answer the practical search intent.
+
+### Image rules
+
+- When a topic is procedural, visual, or easy to misunderstand, add at least one supporting image.
+- Prefer the latest official screenshot when the reader needs to see:
+  - a service screen
+  - an application path
+  - a pricing page
+  - an announcement card or schedule graphic
+- If an official screen is not available or not useful, create a simple original explainer image or diagram instead of leaving the article text-only.
+- Store article assets in `site/assets/`.
+- If an image should be used for sharing metadata, set `image` and `image_alt` in the post front matter.
+- If an image helps the reader inside the article, place it directly in the body with HTML, for example:
+
+```html
+<figure>
+  <img src="../assets/example.png" alt="설명용 이미지">
+  <figcaption>핵심 화면이나 비교 포인트를 보여주는 이미지</figcaption>
+</figure>
+```
+
+- Keep list pages text-first. Images belong in the article body unless there is a clear reason to expose them elsewhere.
+- Use clear alt text so the image still explains something even when it does not load.
+
 Example:
 
 ```html

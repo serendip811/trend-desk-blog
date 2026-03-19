@@ -1,0 +1,90 @@
+<svg width="1200" height="675" viewBox="0 0 1200 675" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="title desc">
+  <title id="title">KT엠모바일 요금제 체크포인트 안내</title>
+  <desc id="desc">요금제 선택 전에 확인할 데이터, 개통, 혜택, 해외 사용, 고객센터 체크포인트를 정리한 원본 안내 이미지.</desc>
+  <defs>
+    <linearGradient id="bg" x1="120" y1="40" x2="1080" y2="635" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#F7F3EA"/>
+      <stop offset="1" stop-color="#FFF8F0"/>
+    </linearGradient>
+    <linearGradient id="card" x1="0" y1="0" x2="0" y2="1">
+      <stop stop-color="#FFFFFF"/>
+      <stop offset="1" stop-color="#FFF6E8"/>
+    </linearGradient>
+    <linearGradient id="accent" x1="180" y1="120" x2="1020" y2="560" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#D97706"/>
+      <stop offset="1" stop-color="#EA580C"/>
+    </linearGradient>
+    <filter id="shadow" x="0" y="0" width="1200" height="675" filterUnits="userSpaceOnUse">
+      <feDropShadow dx="0" dy="12" stdDeviation="24" flood-color="#7C2D12" flood-opacity="0.14"/>
+    </filter>
+  </defs>
+
+  <rect width="1200" height="675" fill="url(#bg)"/>
+  <circle cx="1010" cy="120" r="92" fill="#F59E0B" fill-opacity="0.14"/>
+  <circle cx="180" cy="560" r="120" fill="#EA580C" fill-opacity="0.08"/>
+
+  <g filter="url(#shadow)">
+    <rect x="72" y="56" width="1056" height="563" rx="36" fill="url(#card)"/>
+  </g>
+
+  <rect x="72" y="56" width="1056" height="92" rx="36" fill="url(#accent)"/>
+  <rect x="72" y="112" width="1056" height="36" fill="url(#accent)"/>
+  <text x="112" y="108" fill="#FFFFFF" font-size="42" font-weight="800" font-family="system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif">KT엠모바일 요금제 체크포인트</text>
+  <text x="112" y="140" fill="#FFF7ED" font-size="20" font-weight="500" font-family="system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif">요금표보다 먼저 볼 것: 데이터, 개통, 혜택, 해외 사용, 고객센터</text>
+
+  <g transform="translate(112 192)">
+    <g>
+      <rect x="0" y="0" width="276" height="152" rx="24" fill="#FFFFFF" stroke="#F4C38A" stroke-width="2"/>
+      <circle cx="44" cy="44" r="22" fill="#FEF3C7"/>
+      <text x="34" y="52" font-size="22" font-weight="800" fill="#B45309" font-family="system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif">1</text>
+      <text x="80" y="47" font-size="28" font-weight="800" fill="#111827" font-family="system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif">데이터</text>
+      <text x="26" y="92" font-size="20" fill="#4B5563" font-family="system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif">한 달 사용량과</text>
+      <text x="26" y="120" font-size="20" fill="#4B5563" font-family="system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif">소진 후 속도 확인</text>
+    </g>
+
+    <g transform="translate(308 0)">
+      <rect x="0" y="0" width="276" height="152" rx="24" fill="#FFFFFF" stroke="#F4C38A" stroke-width="2"/>
+      <circle cx="44" cy="44" r="22" fill="#FEF3C7"/>
+      <text x="34" y="52" font-size="22" font-weight="800" fill="#B45309" font-family="system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif">2</text>
+      <text x="80" y="47" font-size="28" font-weight="800" fill="#111827" font-family="system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif">개통</text>
+      <text x="26" y="92" font-size="20" fill="#4B5563" font-family="system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif">유심, eSIM, 셀프개통</text>
+      <text x="26" y="120" font-size="20" fill="#4B5563" font-family="system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif">가능 여부 먼저 확인</text>
+    </g>
+
+    <g transform="translate(616 0)">
+      <rect x="0" y="0" width="276" height="152" rx="24" fill="#FFFFFF" stroke="#F4C38A" stroke-width="2"/>
+      <circle cx="44" cy="44" r="22" fill="#FEF3C7"/>
+      <text x="34" y="52" font-size="22" font-weight="800" fill="#B45309" font-family="system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif">3</text>
+      <text x="80" y="47" font-size="28" font-weight="800" fill="#111827" font-family="system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif">혜택</text>
+      <text x="26" y="92" font-size="20" fill="#4B5563" font-family="system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif">실제로 쓰는 제휴만</text>
+      <text x="26" y="120" font-size="20" fill="#4B5563" font-family="system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif">체감 이득인지 확인</text>
+    </g>
+  </g>
+
+  <g transform="translate(112 382)">
+    <g>
+      <rect x="0" y="0" width="276" height="152" rx="24" fill="#FFFFFF" stroke="#F4C38A" stroke-width="2"/>
+      <circle cx="44" cy="44" r="22" fill="#FEF3C7"/>
+      <text x="34" y="52" font-size="22" font-weight="800" fill="#B45309" font-family="system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif">4</text>
+      <text x="80" y="47" font-size="28" font-weight="800" fill="#111827" font-family="system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif">해외 사용</text>
+      <text x="26" y="92" font-size="20" fill="#4B5563" font-family="system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif">로밍이나 mobi가</text>
+      <text x="26" y="120" font-size="20" fill="#4B5563" font-family="system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif">필요한지 확인</text>
+    </g>
+
+    <g transform="translate(308 0)">
+      <rect x="0" y="0" width="276" height="152" rx="24" fill="#FFFFFF" stroke="#F4C38A" stroke-width="2"/>
+      <circle cx="44" cy="44" r="22" fill="#FEF3C7"/>
+      <text x="34" y="52" font-size="22" font-weight="800" fill="#B45309" font-family="system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif">5</text>
+      <text x="80" y="47" font-size="28" font-weight="800" fill="#111827" font-family="system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif">고객센터</text>
+      <text x="26" y="92" font-size="20" fill="#4B5563" font-family="system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif">FAQ, 운영시간,</text>
+      <text x="26" y="120" font-size="20" fill="#4B5563" font-family="system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif">문의 경로를 미리 확인</text>
+    </g>
+
+    <g transform="translate(616 0)">
+      <rect x="0" y="0" width="276" height="152" rx="24" fill="#FFF7ED" stroke="#FDBA74" stroke-width="2"/>
+      <text x="28" y="48" font-size="26" font-weight="800" fill="#9A3412" font-family="system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif">한 줄 정리</text>
+      <text x="28" y="86" font-size="20" fill="#4B5563" font-family="system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif">요금이 아니라</text>
+      <text x="28" y="114" font-size="20" fill="#4B5563" font-family="system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif">내 사용 패턴부터 맞추기</text>
+    </g>
+  </g>
+</svg>
