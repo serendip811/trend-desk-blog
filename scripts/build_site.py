@@ -170,6 +170,112 @@ def indent_html(raw: str, spaces: int = 8) -> str:
     return textwrap.indent(raw.rstrip(), " " * spaces)
 
 
+def normalize_whitespace(value: str) -> str:
+    return re.sub(r"\s+", " ", value).strip()
+
+
+def strip_tags(value: str) -> str:
+    return normalize_whitespace(re.sub(r"<[^>]+>", " ", value))
+
+
+def json_ld_block(data: dict[str, object] | list[dict[str, object]] | None) -> str:
+    if not data:
+        return ""
+    payload = json.dumps(data, ensure_ascii=False, separators=(",", ":")).replace("</", "<\\/")
+    return f'\n  <script type="application/ld+json">{payload}</script>'
+
+
+def publisher_schema(site: dict[str, object]) -> dict[str, object]:
+    base_url = str(site["base_url"])
+    return {
+        "@type": "Organization",
+        "name": str(site["site_title"]),
+        "url": base_url.rstrip("/") + "/",
+        "logo": {
+            "@type": "ImageObject",
+            "url": absolute_url(base_url, "assets/favicon.svg"),
+        },
+    }
+
+
+def breadcrumb_schema(base_url: str, items: list[tuple[str, str]]) -> dict[str, object]:
+    return {
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+            {
+                "@type": "ListItem",
+                "position": index,
+                "name": name,
+                "item": absolute_url(base_url, path),
+            }
+            for index, (name, path) in enumerate(items, start=1)
+        ],
+    }
+
+
+def item_list_schema(base_url: str, name: str, items: list[tuple[str, str]]) -> dict[str, object]:
+    return {
+        "@type": "ItemList",
+        "name": name,
+        "itemListElement": [
+            {
+                "@type": "ListItem",
+                "position": index,
+                "url": absolute_url(base_url, path),
+                "name": label,
+            }
+            for index, (label, path) in enumerate(items, start=1)
+        ],
+    }
+
+
+def extract_faq_pairs(body_html: str) -> list[tuple[str, str]]:
+    section_match = re.search(r"<h2>\s*자주 묻는 질문\s*</h2>(.*?)(?:<div class=\"article-bottom-links\">|$)", body_html, re.S)
+    if not section_match:
+        return []
+
+    section = section_match.group(1)
+    pairs: list[tuple[str, str]] = []
+    for question, answer_html in re.findall(r"<h3>\s*Q\.?\s*(.*?)\s*</h3>\s*(<p>.*?</p>)", section, re.S):
+        cleaned_question = strip_tags(question)
+        cleaned_answer = strip_tags(answer_html)
+        if cleaned_question and cleaned_answer:
+            pairs.append((cleaned_question, cleaned_answer))
+    return pairs
+
+
+def faq_schema(faq_pairs: list[tuple[str, str]]) -> dict[str, object] | None:
+    if not faq_pairs:
+        return None
+
+    return {
+        "@type": "FAQPage",
+        "mainEntity": [
+            {
+                "@type": "Question",
+                "name": question,
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": answer,
+                },
+            }
+            for question, answer in faq_pairs
+        ],
+    }
+
+
+def build_robots(site: dict[str, object]) -> str:
+    return "\n".join(
+        [
+            "User-agent: *",
+            "Allow: /",
+            "",
+            f"Sitemap: {absolute_url(str(site['base_url']), '/sitemap.xml')}",
+            "",
+        ]
+    )
+
+
 def build_head(
     *,
     site: dict[str, object],
@@ -179,16 +285,20 @@ def build_head(
     canonical_path: str,
     og_type: str = "website",
     og_image: str | None = None,
-    robots: str = "index,follow,max-image-preview:large",
+    og_image_alt: str | None = None,
+    robots: str = "index,follow,max-image-preview:large,max-snippet:-1,max-video-preview:-1",
     extra_meta: str = "",
+    structured_data: dict[str, object] | list[dict[str, object]] | None = None,
 ) -> str:
     site_title = str(site["site_title"])
     base_url = str(site["base_url"])
     resolved_title = format_title(site_title, page_title)
     canonical_url = absolute_url(base_url, canonical_path)
     image_url = absolute_url(base_url, og_image or str(site["default_og_image"]))
+    image_alt = og_image_alt or resolved_title
 
     extra = f"\n{extra_meta.rstrip()}" if extra_meta else ""
+    structured_data_block = json_ld_block(structured_data)
     return f"""<head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -203,12 +313,15 @@ def build_head(
   <meta property="og:site_name" content="{escape(site_title)}">
   <meta property="og:locale" content="ko_KR">
   <meta property="og:image" content="{escape(image_url)}">
+  <meta property="og:image:alt" content="{escape(image_alt)}">
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:title" content="{escape(resolved_title)}">
   <meta name="twitter:description" content="{escape(description)}">
   <meta name="twitter:image" content="{escape(image_url)}">
+  <meta name="twitter:image:alt" content="{escape(image_alt)}">
   <link rel="icon" href="{prefix}assets/favicon.svg" type="image/svg+xml">
-  <link rel="stylesheet" href="{prefix}styles.css">{extra}
+  <link rel="alternate" type="application/rss+xml" title="{escape(site_title)} RSS" href="{prefix}rss.xml">
+  <link rel="stylesheet" href="{prefix}styles.css">{extra}{structured_data_block}
 </head>"""
 
 
@@ -283,14 +396,42 @@ def render_page(site: dict[str, object], head: str, body: str) -> str:
 
 
 def build_home(site: dict[str, object], posts: list[Post], categories: dict[str, Category]) -> str:
+    base_url = str(site["base_url"])
+    listed_posts = [post for post in posts if post.listed]
+    structured_data: list[dict[str, object]] = [
+        {
+            "@context": "https://schema.org",
+            "@type": "WebSite",
+            "name": str(site["site_title"]),
+            "url": base_url.rstrip("/") + "/",
+            "description": str(site["default_description"]),
+            "publisher": publisher_schema(site),
+        },
+        {
+            "@context": "https://schema.org",
+            "@type": "CollectionPage",
+            "name": str(site["home_title"]),
+            "url": base_url.rstrip("/") + "/",
+            "description": str(site["home_description"]),
+            "inLanguage": "ko-KR",
+            "publisher": publisher_schema(site),
+            "image": absolute_url(base_url, str(site["default_og_image"])),
+            "isPartOf": {"@type": "WebSite", "name": str(site["site_title"]), "url": base_url.rstrip("/") + "/"},
+            "mainEntity": item_list_schema(
+                base_url,
+                "Trend Desk 최신 글",
+                [(post.title, f"/posts/{post.slug}.html") for post in listed_posts],
+            ),
+        },
+    ]
     head = build_head(
         site=site,
         prefix="",
-        page_title=str(site["site_title"]),
+        page_title=str(site["home_title"]),
         description=str(site["default_description"]),
         canonical_path="/",
+        structured_data=structured_data,
     )
-    listed_posts = [post for post in posts if post.listed]
     feed_html = "\n\n".join(
         render_feed_item(post, categories, prefix="", show_category_link=True) for post in listed_posts
     )
@@ -313,14 +454,38 @@ def build_home(site: dict[str, object], posts: list[Post], categories: dict[str,
 
 
 def build_archive(site: dict[str, object], posts: list[Post], categories: dict[str, Category]) -> str:
+    base_url = str(site["base_url"])
+    listed_posts = [post for post in posts if post.listed]
+    structured_data: list[dict[str, object]] = [
+        {
+            "@context": "https://schema.org",
+            "@type": "CollectionPage",
+            "name": "전체 글 목록",
+            "url": absolute_url(base_url, "/archive.html"),
+            "description": "Trend Desk에 올라온 전체 글 목록입니다.",
+            "inLanguage": "ko-KR",
+            "publisher": publisher_schema(site),
+            "image": absolute_url(base_url, str(site["default_og_image"])),
+            "isPartOf": {"@type": "WebSite", "name": str(site["site_title"]), "url": base_url.rstrip("/") + "/"},
+            "mainEntity": item_list_schema(
+                base_url,
+                "Trend Desk 전체 글",
+                [(post.title, f"/posts/{post.slug}.html") for post in listed_posts],
+            ),
+        },
+        {
+            "@context": "https://schema.org",
+            **breadcrumb_schema(base_url, [("홈", "/"), ("글 목록", "/archive.html")]),
+        },
+    ]
     head = build_head(
         site=site,
         prefix="",
         page_title="글 목록",
         description="Trend Desk에 올라온 전체 글 목록입니다.",
         canonical_path="/archive.html",
+        structured_data=structured_data,
     )
-    listed_posts = [post for post in posts if post.listed]
     feed_html = "\n\n".join(
         render_feed_item(post, categories, prefix="", show_category_link=False) for post in listed_posts
     )
@@ -342,12 +507,35 @@ def build_archive(site: dict[str, object], posts: list[Post], categories: dict[s
 
 
 def build_category_index(site: dict[str, object], categories: list[Category], posts: list[Post]) -> str:
+    base_url = str(site["base_url"])
+    visible_categories = [category for category in categories if not category.coming_soon]
     head = build_head(
         site=site,
         prefix="../",
         page_title="카테고리",
         description="Trend Desk의 카테고리 목록입니다.",
         canonical_path="/categories/index.html",
+        structured_data=[
+            {
+                "@context": "https://schema.org",
+                "@type": "CollectionPage",
+                "name": "Trend Desk 카테고리",
+                "url": absolute_url(base_url, "/categories/index.html"),
+                "description": "Trend Desk의 카테고리 목록입니다.",
+                "inLanguage": "ko-KR",
+                "publisher": publisher_schema(site),
+                "image": absolute_url(base_url, str(site["default_og_image"])),
+                "mainEntity": item_list_schema(
+                    base_url,
+                    "Trend Desk 카테고리 목록",
+                    [(category.name, f"/categories/{category.slug}.html") for category in visible_categories],
+                ),
+            },
+            {
+                "@context": "https://schema.org",
+                **breadcrumb_schema(base_url, [("홈", "/"), ("카테고리", "/categories/index.html")]),
+            },
+        ],
     )
     counts = defaultdict(int)
     for post in posts:
@@ -397,12 +585,34 @@ def build_category_index(site: dict[str, object], categories: list[Category], po
 
 
 def build_category_page(site: dict[str, object], category: Category, posts: list[Post], categories: dict[str, Category]) -> str:
+    base_url = str(site["base_url"])
     head = build_head(
         site=site,
         prefix="../",
         page_title=category.name,
         description=f"Trend Desk의 {category.name} 카테고리입니다.",
         canonical_path=f"/categories/{category.slug}.html",
+        structured_data=[
+            {
+                "@context": "https://schema.org",
+                "@type": "CollectionPage",
+                "name": category.name,
+                "url": absolute_url(base_url, f"/categories/{category.slug}.html"),
+                "description": category.description,
+                "inLanguage": "ko-KR",
+                "publisher": publisher_schema(site),
+                "image": absolute_url(base_url, str(site["default_og_image"])),
+                "mainEntity": item_list_schema(
+                    base_url,
+                    f"{category.name} 글 목록",
+                    [(post.title, f"/posts/{post.slug}.html") for post in posts],
+                ),
+            },
+            {
+                "@context": "https://schema.org",
+                **breadcrumb_schema(base_url, [("홈", "/"), ("카테고리", "/categories/index.html"), (category.name, f"/categories/{category.slug}.html")]),
+            },
+        ],
     )
     feed_html = "\n\n".join(
         render_feed_item(post, categories, prefix="../", show_category_link=False) for post in posts
@@ -426,6 +636,7 @@ def build_category_page(site: dict[str, object], category: Category, posts: list
 
 
 def build_post_page(site: dict[str, object], post: Post, category: Category) -> str:
+    base_url = str(site["base_url"])
     article_meta = "\n".join(
         [
             f'  <meta property="article:published_time" content="{escape(post.date)}">',
@@ -435,6 +646,40 @@ def build_post_page(site: dict[str, object], post: Post, category: Category) -> 
         ]
     )
     robots = "index,follow,max-image-preview:large,max-snippet:-1,max-video-preview:-1" if post.listed else "noindex,follow"
+    breadcrumb_data = {
+        "@context": "https://schema.org",
+        **breadcrumb_schema(
+            base_url,
+            [
+                ("홈", "/"),
+                ("카테고리", f"/categories/{category.slug}.html"),
+                (post.breadcrumb_title, f"/posts/{post.slug}.html"),
+            ],
+        ),
+    }
+    article_data: dict[str, object] = {
+        "@context": "https://schema.org",
+        "@type": "Article",
+        "headline": post.title,
+        "description": post.description,
+        "datePublished": post.date,
+        "dateModified": post.updated_at,
+        "mainEntityOfPage": absolute_url(base_url, f"/posts/{post.slug}.html"),
+        "url": absolute_url(base_url, f"/posts/{post.slug}.html"),
+        "inLanguage": "ko-KR",
+        "articleSection": category.name,
+        "isPartOf": {"@type": "WebSite", "name": str(site["site_title"]), "url": base_url.rstrip("/") + "/"},
+        "author": {
+            "@type": "Organization",
+            "name": str(site["site_title"]),
+        },
+        "publisher": publisher_schema(site),
+        "image": [absolute_url(base_url, post.image)] if post.image else [absolute_url(base_url, str(site["default_og_image"]))],
+    }
+    faq_data = faq_schema(extract_faq_pairs(post.body_html))
+    structured_data: list[dict[str, object]] = [breadcrumb_data, article_data]
+    if faq_data:
+        structured_data.append({"@context": "https://schema.org", **faq_data})
     head = build_head(
         site=site,
         prefix="../",
@@ -443,8 +688,10 @@ def build_post_page(site: dict[str, object], post: Post, category: Category) -> 
         canonical_path=f"/posts/{post.slug}.html",
         og_type="article",
         og_image=post.image or str(site["default_og_image"]),
+        og_image_alt=post.image_alt or post.title,
         robots=robots,
         extra_meta=article_meta,
+        structured_data=structured_data,
     )
 
     meta_bits = [f'<span class="feed-category">{escape(category.feed_label)}</span>', f"<span>{escape(post.date)}</span>"]
@@ -582,6 +829,7 @@ def main() -> None:
 
     write_text(SITE_DIR / "rss.xml", build_rss(site, posts, category_map))
     write_text(SITE_DIR / "sitemap.xml", build_sitemap(site, categories, posts))
+    write_text(SITE_DIR / "robots.txt", build_robots(site))
 
 
 if __name__ == "__main__":

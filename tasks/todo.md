@@ -96,3 +96,22 @@
 ## Current Review
 
 - 진행 중
+
+## SEO Task
+
+- [x] 생성기 기준 현재 SEO 메타와 구조화데이터 상태 점검
+- [x] `scripts/build_site.py`에 공통 SEO 출력 보강
+- [x] README와 lessons에 SEO 작성 규칙 반영
+- [x] `site/` 재생성 후 결과 검증 정리
+
+## SEO Review
+
+- 홈, 아카이브, 카테고리, 글 본문에 JSON-LD 구조화데이터가 자동 생성되도록 보강했다.
+- `og:image:alt`, `twitter:image:alt`, RSS alternate 링크, 강한 robots 정책을 공통 head에 넣었다.
+- 홈 메타 타이틀은 사이트명 단독이 아니라 실제 검색 의도가 드러나는 `home_title` 기준으로 생성되게 바꿨다.
+- `site/robots.txt`도 생성기에서 함께 만들도록 바꿔 sitemap 경로를 수동 관리하지 않게 정리했다.
+- README에는 제목, 설명, 요약, 내부 링크, `updated_at`, 자동 생성 SEO 요소 기준을 추가했다.
+- Verification:
+- `python3 scripts/build_site.py` passed.
+- `git diff --check` passed.
+- `site/index.html`, `site/archive.html`, `site/categories/*.html`, `site/posts/*.html`, `site/robots.txt`에서 메타 타이틀, OG 이미지 alt, JSON-LD, robots 출력을 확인했다.
