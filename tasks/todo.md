@@ -115,3 +115,39 @@
 - `python3 scripts/build_site.py` passed.
 - `git diff --check` passed.
 - `site/index.html`, `site/archive.html`, `site/categories/*.html`, `site/posts/*.html`, `site/robots.txt`에서 메타 타이틀, OG 이미지 alt, JSON-LD, robots 출력을 확인했다.
+
+## Pipeline Review Task
+
+- [x] 현재 `config/sources.json` 필터와 소스 구성을 확인
+- [x] 최신 기준으로 파이프라인을 다시 실행
+- [x] 결과 리포트와 raw 데이터를 검토해 글감 품질과 키워드 폭 평가
+- [x] 필요하면 키워드/소스 확장 방향 제안 정리
+
+## Pipeline Review Notes
+
+- 현재 소스는 Google Trends KR, Google News KR 검색형 RSS 4종, Daum 실시간 관심으로 구성돼 있다.
+- 진짜 폭을 줄이는 쪽은 소스 수보다 `filters.must_match_any`와 `exclude_keywords`로 보인다.
+- 즉 파이프라인 목적이 "생활형 검색 의도 선별"이라면 지금 구조가 맞고, 목적이 "더 넓은 트렌드 탐색"이면 필터를 완화하거나 소스를 더 늘려야 한다.
+- `2026-03-19 23:15`에 `python3 pipeline.py run --limit 12`를 다시 실행했고 `383건` 수집, `335건` 필터링 결과를 확인했다.
+- 상위 12개는 `KT엠모바일`, `여행가는 봄`, `국민연금 첫 가입 지원금`, `청년월세`, `넷플릭스 요금제`, `경남 생활지원금`처럼 여전히 지원금·요금제·신청성 키워드에 강하게 쏠렸다.
+- 상위 60개 기준 소스 분포도 `Support Programs 37`, `Mobile Plans 21`, `Travel 2`라서 현재 파이프라인은 "넓은 트렌드 탐색"보다 "생활형 검색 의도 선별기"에 가깝다.
+- `must_match_any` 때문에 놓치는 고득점 후보는 거의 없었고, 실제 편향 원인은 Google News 검색식이 `여행`, `요금제`, `지원금`, `네이버`처럼 카테고리형으로 고정된 점에 더 가깝다.
+- 넓히고 싶다면 `must_match_any`를 크게 푸는 것보다 `Google News KR Finance/Payments`, `Google News KR Jobs/Side Hustle`, `Google News KR AI/Work Tools`, `Google News KR Housing/Moving` 같은 검색형 소스를 병렬로 추가하는 쪽이 더 낫다.
+
+## Two More Posts Task
+
+- [x] 추가 작성할 주제 2개 선정
+- [x] 각 주제의 최신 공식 링크와 확인 포인트 점검
+- [x] 글 원본 2개와 설명 이미지 2개 추가
+- [x] `site/` 재생성 후 노출 및 출력 검증
+
+## Two More Posts Notes
+
+- 이번 추가 글은 `국민연금 첫 가입 지원금` 검색 의도를 실제 공식 제도인 `두루누리 신규가입자 보험료 지원`에 연결하는 정책 글 1개와, `넷플릭스 요금제`를 광고형·화질·추가회원·디바이스 제한 기준으로 정리하는 디지털 글 1개로 잡았다.
+- 정책 글은 국민연금공단과 두루누리 공식 페이지 기준으로, 넷플릭스 글은 넷플릭스 고객센터 공식 문서 기준으로 쓴다.
+- `national-pension-first-join-support-2026`와 `netflix-plan-checklist-2026` 원본을 `content/posts/`에 추가했고, 본문용 SVG 2개도 `site/assets/`에 함께 넣었다.
+- `python3 scripts/build_site.py`로 `site/posts/` 출력물을 재생성했고, 홈·아카이브·카테고리·RSS·사이트맵에 두 글이 모두 반영됨을 확인했다.
+- Verification:
+- `python3 scripts/build_site.py` passed.
+- `git diff --check` passed.
+- `rg`로 `site/index.html`, `site/archive.html`, `site/categories/*.html`, `site/rss.xml`, `site/sitemap.xml`에 새 슬러그 노출을 확인했다.

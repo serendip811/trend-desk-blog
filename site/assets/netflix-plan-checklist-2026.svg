@@ -1,0 +1,36 @@
+<svg width="1200" height="720" viewBox="0 0 1200 720" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="1200" height="720" fill="#F4F1EC"/>
+  <rect x="40" y="40" width="1120" height="640" rx="28" fill="#FFFDFC" stroke="#DDD5CB" stroke-width="4"/>
+  <text x="80" y="108" fill="#111111" font-family="Pretendard, Apple SD Gothic Neo, sans-serif" font-size="40" font-weight="700">넷플릭스 요금제 체크 순서</text>
+  <text x="80" y="148" fill="#6A625B" font-family="Pretendard, Apple SD Gothic Neo, sans-serif" font-size="22">가격표만 보기보다 광고형 제한, 화질, 추가 회원, 실제 결제 내역을 먼저 확인하는 흐름입니다.</text>
+
+  <rect x="80" y="198" width="240" height="168" rx="20" fill="#221F1F"/>
+  <text x="104" y="246" fill="#E50914" font-family="Pretendard, Apple SD Gothic Neo, sans-serif" font-size="28" font-weight="700">광고형</text>
+  <text x="104" y="286" fill="#FFFFFF" font-family="Pretendard, Apple SD Gothic Neo, sans-serif" font-size="21">짧은 광고</text>
+  <text x="104" y="316" fill="#FFFFFF" font-family="Pretendard, Apple SD Gothic Neo, sans-serif" font-size="21">일부 콘텐츠 제한</text>
+  <text x="104" y="346" fill="#FFFFFF" font-family="Pretendard, Apple SD Gothic Neo, sans-serif" font-size="21">캐스트·미러링 제한</text>
+
+  <rect x="340" y="198" width="240" height="168" rx="20" fill="#F5E5E6"/>
+  <text x="364" y="246" fill="#7A1017" font-family="Pretendard, Apple SD Gothic Neo, sans-serif" font-size="28" font-weight="700">화질</text>
+  <text x="364" y="286" fill="#2C2C2C" font-family="Pretendard, Apple SD Gothic Neo, sans-serif" font-size="21">HD면 충분한지</text>
+  <text x="364" y="316" fill="#2C2C2C" font-family="Pretendard, Apple SD Gothic Neo, sans-serif" font-size="21">4K·HDR이 필요한지</text>
+  <text x="364" y="346" fill="#2C2C2C" font-family="Pretendard, Apple SD Gothic Neo, sans-serif" font-size="21">디바이스도 지원하는지</text>
+
+  <rect x="600" y="198" width="240" height="168" rx="20" fill="#E8EDF3"/>
+  <text x="624" y="246" fill="#18395F" font-family="Pretendard, Apple SD Gothic Neo, sans-serif" font-size="28" font-weight="700">추가 회원</text>
+  <text x="624" y="286" fill="#2C2C2C" font-family="Pretendard, Apple SD Gothic Neo, sans-serif" font-size="21">같이 살지 않는 사람과</text>
+  <text x="624" y="316" fill="#2C2C2C" font-family="Pretendard, Apple SD Gothic Neo, sans-serif" font-size="21">공유할 계획이 있는지</text>
+  <text x="624" y="346" fill="#2C2C2C" font-family="Pretendard, Apple SD Gothic Neo, sans-serif" font-size="21">광고형은 추가 회원 불가</text>
+
+  <rect x="860" y="198" width="240" height="168" rx="20" fill="#E7F0E2"/>
+  <text x="884" y="246" fill="#2C5C2D" font-family="Pretendard, Apple SD Gothic Neo, sans-serif" font-size="28" font-weight="700">실제 청구</text>
+  <text x="884" y="286" fill="#2C2C2C" font-family="Pretendard, Apple SD Gothic Neo, sans-serif" font-size="21">계정 결제 내역 확인</text>
+  <text x="884" y="316" fill="#2C2C2C" font-family="Pretendard, Apple SD Gothic Neo, sans-serif" font-size="21">세금·패키지 여부 확인</text>
+  <text x="884" y="346" fill="#2C2C2C" font-family="Pretendard, Apple SD Gothic Neo, sans-serif" font-size="21">필요하면 멤버십 변경</text>
+
+  <rect x="80" y="430" width="1020" height="190" rx="24" fill="#111111"/>
+  <text x="116" y="486" fill="#FFFFFF" font-family="Pretendard, Apple SD Gothic Neo, sans-serif" font-size="28" font-weight="700">핵심 판단</text>
+  <text x="116" y="528" fill="#FFFFFF" font-family="Pretendard, Apple SD Gothic Neo, sans-serif" font-size="24">광고를 감수할 수 있으면 광고형 검토</text>
+  <text x="116" y="566" fill="#FFFFFF" font-family="Pretendard, Apple SD Gothic Neo, sans-serif" font-size="24">고화질이 중요하면 멤버십뿐 아니라 TV·스트리밍 기기·케이블까지 같이 확인</text>
+  <text x="116" y="604" fill="#FFFFFF" font-family="Pretendard, Apple SD Gothic Neo, sans-serif" font-size="24">함께 사는 사람이 아니면 계정 공유보다 추가 회원 규칙을 먼저 확인</text>
+</svg>

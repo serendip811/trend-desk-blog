@@ -1,0 +1,41 @@
+<svg width="1200" height="720" viewBox="0 0 1200 720" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="1200" height="720" fill="#F7F2E8"/>
+  <rect x="40" y="40" width="1120" height="640" rx="28" fill="#FFFDF8" stroke="#E7DCC8" stroke-width="4"/>
+  <text x="80" y="108" fill="#1E2A32" font-family="Pretendard, Apple SD Gothic Neo, sans-serif" font-size="40" font-weight="700">국민연금 첫 가입 지원 체크</text>
+  <text x="80" y="148" fill="#6E6356" font-family="Pretendard, Apple SD Gothic Neo, sans-serif" font-size="22">검색어는 지원금이지만, 실제로는 두루누리 신규가입자 보험료 지원부터 확인하는 경우가 많습니다.</text>
+
+  <rect x="80" y="198" width="240" height="180" rx="20" fill="#F9E7CF"/>
+  <circle cx="122" cy="238" r="22" fill="#C77D2A"/>
+  <text x="114" y="246" fill="#FFFDF8" font-family="Pretendard, Apple SD Gothic Neo, sans-serif" font-size="22" font-weight="700">1</text>
+  <text x="104" y="286" fill="#1E2A32" font-family="Pretendard, Apple SD Gothic Neo, sans-serif" font-size="30" font-weight="700">사업장 규모</text>
+  <text x="104" y="326" fill="#4D443B" font-family="Pretendard, Apple SD Gothic Neo, sans-serif" font-size="22">근로자 10명 미만</text>
+  <text x="104" y="358" fill="#4D443B" font-family="Pretendard, Apple SD Gothic Neo, sans-serif" font-size="22">사업장인지 확인</text>
+
+  <rect x="340" y="198" width="240" height="180" rx="20" fill="#E8F0DF"/>
+  <circle cx="382" cy="238" r="22" fill="#4B7B48"/>
+  <text x="374" y="246" fill="#FFFDF8" font-family="Pretendard, Apple SD Gothic Neo, sans-serif" font-size="22" font-weight="700">2</text>
+  <text x="364" y="286" fill="#1E2A32" font-family="Pretendard, Apple SD Gothic Neo, sans-serif" font-size="30" font-weight="700">소득 기준</text>
+  <text x="364" y="326" fill="#4D443B" font-family="Pretendard, Apple SD Gothic Neo, sans-serif" font-size="22">기준소득월액</text>
+  <text x="364" y="358" fill="#4D443B" font-family="Pretendard, Apple SD Gothic Neo, sans-serif" font-size="22">270만원 미만</text>
+
+  <rect x="600" y="198" width="240" height="180" rx="20" fill="#E2EEF7"/>
+  <circle cx="642" cy="238" r="22" fill="#2A6999"/>
+  <text x="634" y="246" fill="#FFFDF8" font-family="Pretendard, Apple SD Gothic Neo, sans-serif" font-size="22" font-weight="700">3</text>
+  <text x="624" y="286" fill="#1E2A32" font-family="Pretendard, Apple SD Gothic Neo, sans-serif" font-size="30" font-weight="700">신규가입</text>
+  <text x="624" y="326" fill="#4D443B" font-family="Pretendard, Apple SD Gothic Neo, sans-serif" font-size="22">최근 1년간</text>
+  <text x="624" y="358" fill="#4D443B" font-family="Pretendard, Apple SD Gothic Neo, sans-serif" font-size="22">사업장 가입 이력 없음</text>
+
+  <rect x="860" y="198" width="240" height="180" rx="20" fill="#F4E1E3"/>
+  <circle cx="902" cy="238" r="22" fill="#A14558"/>
+  <text x="894" y="246" fill="#FFFDF8" font-family="Pretendard, Apple SD Gothic Neo, sans-serif" font-size="22" font-weight="700">4</text>
+  <text x="884" y="286" fill="#1E2A32" font-family="Pretendard, Apple SD Gothic Neo, sans-serif" font-size="30" font-weight="700">재산·소득</text>
+  <text x="884" y="326" fill="#4D443B" font-family="Pretendard, Apple SD Gothic Neo, sans-serif" font-size="22">재산 6억원 미만</text>
+  <text x="884" y="358" fill="#4D443B" font-family="Pretendard, Apple SD Gothic Neo, sans-serif" font-size="22">종합소득 4,300만원 미만</text>
+
+  <rect x="80" y="430" width="1020" height="180" rx="24" fill="#1E2A32"/>
+  <text x="116" y="484" fill="#FFFDF8" font-family="Pretendard, Apple SD Gothic Neo, sans-serif" font-size="28" font-weight="700">2026 핵심 수치</text>
+  <text x="116" y="528" fill="#FFFDF8" font-family="Pretendard, Apple SD Gothic Neo, sans-serif" font-size="24">신규가입자 80% 지원</text>
+  <text x="380" y="528" fill="#FFFDF8" font-family="Pretendard, Apple SD Gothic Neo, sans-serif" font-size="24">근로자·사업주 각각 월 최대 87,400원</text>
+  <text x="820" y="528" fill="#FFFDF8" font-family="Pretendard, Apple SD Gothic Neo, sans-serif" font-size="24">최대 36개월</text>
+  <text x="116" y="570" fill="#D8E1E7" font-family="Pretendard, Apple SD Gothic Neo, sans-serif" font-size="21">자영업자나 지역가입자는 별도로 국민연금공단의 지역가입자 보험료 지원 제도를 확인해야 합니다.</text>
+</svg>
