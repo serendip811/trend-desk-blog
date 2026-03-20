@@ -20,6 +20,8 @@ Quality rules:
 - Avoid duplicate search intent across the 3 new posts.
 - Prefer practical guide, checklist, comparison, or application-intent angles over pure news summaries.
 - Use Korean copy for reader-facing content.
+- If you create SVG or other original image assets, all visible text inside the image must be in Korean, not English.
+- Match image copy to the article's Korean tone and make the image readable for Korean users without mixing in English headings.
 
 Git rules:
 - Do not commit.
