@@ -3,3 +3,5 @@ outputs/
 __pycache__/
 .npm-cache/
 .playwright-browsers/
+.env.local
+.secrets/
