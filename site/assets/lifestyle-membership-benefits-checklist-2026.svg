@@ -1,0 +1,29 @@
+<svg width="1200" height="720" viewBox="0 0 1200 720" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="1200" height="720" fill="#F3EFE7"/>
+  <rect x="40" y="40" width="1120" height="640" rx="28" fill="#FFFCF8" stroke="#D7CCBE" stroke-width="4"/>
+  <text x="80" y="108" fill="#111111" font-family="Pretendard, Apple SD Gothic Neo, sans-serif" font-size="40" font-weight="700">생활밀착형 멤버십 비교 순서</text>
+  <text x="80" y="148" fill="#6A625B" font-family="Pretendard, Apple SD Gothic Neo, sans-serif" font-size="22">OTT, 편의점, 배달 중 어디에서 가장 자주 쓰는지부터 나누면 혜택 비교가 쉬워집니다.</text>
+
+  <rect x="80" y="198" width="300" height="188" rx="24" fill="#E7EEF7"/>
+  <text x="108" y="246" fill="#173A61" font-family="Pretendard, Apple SD Gothic Neo, sans-serif" font-size="28" font-weight="700">OTT 중심형</text>
+  <text x="108" y="286" fill="#2C2C2C" font-family="Pretendard, Apple SD Gothic Neo, sans-serif" font-size="21">포함형인지 할인형인지</text>
+  <text x="108" y="318" fill="#2C2C2C" font-family="Pretendard, Apple SD Gothic Neo, sans-serif" font-size="21">광고형·기본형 구간 확인</text>
+  <text x="108" y="350" fill="#2C2C2C" font-family="Pretendard, Apple SD Gothic Neo, sans-serif" font-size="21">기존 구독과 중복 결제 점검</text>
+
+  <rect x="450" y="198" width="300" height="188" rx="24" fill="#EAF3E2"/>
+  <text x="478" y="246" fill="#305E2C" font-family="Pretendard, Apple SD Gothic Neo, sans-serif" font-size="28" font-weight="700">편의점 중심형</text>
+  <text x="478" y="286" fill="#2C2C2C" font-family="Pretendard, Apple SD Gothic Neo, sans-serif" font-size="21">일·월 사용 횟수 확인</text>
+  <text x="478" y="318" fill="#2C2C2C" font-family="Pretendard, Apple SD Gothic Neo, sans-serif" font-size="21">행사 상품·주류 제외 여부</text>
+  <text x="478" y="350" fill="#2C2C2C" font-family="Pretendard, Apple SD Gothic Neo, sans-serif" font-size="21">자주 가는 브랜드인지 확인</text>
+
+  <rect x="820" y="198" width="280" height="188" rx="24" fill="#F8E8DD"/>
+  <text x="848" y="246" fill="#8A4A1F" font-family="Pretendard, Apple SD Gothic Neo, sans-serif" font-size="28" font-weight="700">배달 중심형</text>
+  <text x="848" y="286" fill="#2C2C2C" font-family="Pretendard, Apple SD Gothic Neo, sans-serif" font-size="21">최소 주문 금액 확인</text>
+  <text x="848" y="318" fill="#2C2C2C" font-family="Pretendard, Apple SD Gothic Neo, sans-serif" font-size="21">배달비 할인인지 확인</text>
+  <text x="848" y="350" fill="#2C2C2C" font-family="Pretendard, Apple SD Gothic Neo, sans-serif" font-size="21">적용 앱·브랜드 구분</text>
+
+  <rect x="80" y="440" width="1020" height="176" rx="24" fill="#111111"/>
+  <text x="116" y="494" fill="#FFFFFF" font-family="Pretendard, Apple SD Gothic Neo, sans-serif" font-size="28" font-weight="700">핵심 판단</text>
+  <text x="116" y="536" fill="#FFFFFF" font-family="Pretendard, Apple SD Gothic Neo, sans-serif" font-size="24">혜택 개수보다 내가 한 달에 실제로 몇 번 쓰는지가 먼저입니다.</text>
+  <text x="116" y="574" fill="#FFFFFF" font-family="Pretendard, Apple SD Gothic Neo, sans-serif" font-size="24">월별 이벤트와 상시 혜택을 구분하고, 가입 직전 공식 앱에서 최신 조건을 다시 확인하세요.</text>
+</svg>

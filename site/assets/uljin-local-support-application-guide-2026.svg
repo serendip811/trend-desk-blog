@@ -1,0 +1,45 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630" role="img" aria-labelledby="title desc">
+  <title id="title">울진 민생안정지원금 확인 순서</title>
+  <desc id="desc">대상 확인, 신청 경로 확인, 지급 방식 확인 순서를 보여주는 안내 이미지</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#f6efe3" />
+      <stop offset="100%" stop-color="#d9ead7" />
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="630" fill="url(#bg)" />
+  <rect x="52" y="52" width="1096" height="526" rx="28" fill="#fffdf8" stroke="#1f4d3a" stroke-width="3" />
+  <text x="84" y="126" fill="#1f4d3a" font-family="Pretendard, Apple SD Gothic Neo, sans-serif" font-size="28" font-weight="700">울진 민생안정지원금 확인 순서</text>
+  <text x="84" y="170" fill="#35594a" font-family="Pretendard, Apple SD Gothic Neo, sans-serif" font-size="52" font-weight="800">대상 → 신청 → 지급</text>
+  <text x="84" y="214" fill="#5a6d64" font-family="Pretendard, Apple SD Gothic Neo, sans-serif" font-size="24">울진군청 공지사항과 보도자료를 먼저 다시 확인하세요</text>
+
+  <rect x="84" y="276" width="300" height="212" rx="22" fill="#f2f7f2" stroke="#4b7a61" stroke-width="2" />
+  <rect x="450" y="276" width="300" height="212" rx="22" fill="#fff5e8" stroke="#b87736" stroke-width="2" />
+  <rect x="816" y="276" width="300" height="212" rx="22" fill="#eef5fb" stroke="#3d6f99" stroke-width="2" />
+
+  <circle cx="126" cy="324" r="26" fill="#1f4d3a" />
+  <text x="126" y="333" text-anchor="middle" fill="#ffffff" font-family="Pretendard, Apple SD Gothic Neo, sans-serif" font-size="24" font-weight="700">1</text>
+  <text x="166" y="326" fill="#1f4d3a" font-family="Pretendard, Apple SD Gothic Neo, sans-serif" font-size="32" font-weight="700">대상 확인</text>
+  <text x="108" y="376" fill="#35594a" font-family="Pretendard, Apple SD Gothic Neo, sans-serif" font-size="22">- 기준일 주민등록 여부</text>
+  <text x="108" y="412" fill="#35594a" font-family="Pretendard, Apple SD Gothic Neo, sans-serif" font-size="22">- 세대별/개인별 지급 구분</text>
+  <text x="108" y="448" fill="#35594a" font-family="Pretendard, Apple SD Gothic Neo, sans-serif" font-size="22">- 예외 대상 규정</text>
+
+  <circle cx="492" cy="324" r="26" fill="#b87736" />
+  <text x="492" y="333" text-anchor="middle" fill="#ffffff" font-family="Pretendard, Apple SD Gothic Neo, sans-serif" font-size="24" font-weight="700">2</text>
+  <text x="532" y="326" fill="#8c5420" font-family="Pretendard, Apple SD Gothic Neo, sans-serif" font-size="32" font-weight="700">신청 확인</text>
+  <text x="474" y="376" fill="#8c5420" font-family="Pretendard, Apple SD Gothic Neo, sans-serif" font-size="22">- 신청기간과 마감일</text>
+  <text x="474" y="412" fill="#8c5420" font-family="Pretendard, Apple SD Gothic Neo, sans-serif" font-size="22">- 읍면 방문/온라인 여부</text>
+  <text x="474" y="448" fill="#8c5420" font-family="Pretendard, Apple SD Gothic Neo, sans-serif" font-size="22">- 신분증·위임장 필요 여부</text>
+
+  <circle cx="858" cy="324" r="26" fill="#3d6f99" />
+  <text x="858" y="333" text-anchor="middle" fill="#ffffff" font-family="Pretendard, Apple SD Gothic Neo, sans-serif" font-size="24" font-weight="700">3</text>
+  <text x="898" y="326" fill="#2d597f" font-family="Pretendard, Apple SD Gothic Neo, sans-serif" font-size="32" font-weight="700">지급 확인</text>
+  <text x="840" y="376" fill="#2d597f" font-family="Pretendard, Apple SD Gothic Neo, sans-serif" font-size="22">- 카드 충전/상품권/계좌</text>
+  <text x="840" y="412" fill="#2d597f" font-family="Pretendard, Apple SD Gothic Neo, sans-serif" font-size="22">- 지급 문자와 접수증 확인</text>
+  <text x="840" y="448" fill="#2d597f" font-family="Pretendard, Apple SD Gothic Neo, sans-serif" font-size="22">- 사용기한과 사용처 확인</text>
+
+  <path d="M394 382 L438 382" stroke="#6f8d7f" stroke-width="8" stroke-linecap="round" />
+  <path d="M760 382 L804 382" stroke="#6f8d7f" stroke-width="8" stroke-linecap="round" />
+  <path d="M430 368 L448 382 L430 396" fill="none" stroke="#6f8d7f" stroke-width="8" stroke-linecap="round" stroke-linejoin="round" />
+  <path d="M796 368 L814 382 L796 396" fill="none" stroke="#6f8d7f" stroke-width="8" stroke-linecap="round" stroke-linejoin="round" />
+</svg>

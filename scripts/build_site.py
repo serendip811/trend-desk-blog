@@ -567,6 +567,7 @@ def build_category_index(site: dict[str, object], categories: list[Category], po
         </article>"""
         )
 
+    items_html = indent_html("\n\n".join(items), 8)
     body = f"""    {render_header(site, prefix='../', current_section='categories')}
 
     <main class="content-wrap">
@@ -576,7 +577,7 @@ def build_category_index(site: dict[str, object], categories: list[Category], po
       </section>
 
       <section class="feed-section">
-{indent_html('\n\n'.join(items), 8)}
+{items_html}
       </section>
     </main>
 
