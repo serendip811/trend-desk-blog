@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630" role="img" aria-labelledby="title desc">
+  <title id="title">Art activity preparation fund guide</title>
+  <desc id="desc">Three-step diagram for checking eligibility, notice status, and application route.</desc>
+  <rect width="1200" height="630" fill="#f6efe3"/>
+  <circle cx="160" cy="120" r="120" fill="#d96d3b" opacity="0.16"/>
+  <circle cx="1040" cy="520" r="160" fill="#255f4a" opacity="0.14"/>
+  <rect x="70" y="80" width="1060" height="470" rx="36" fill="#fffaf3" stroke="#d7c2a3" stroke-width="3"/>
+  <text x="100" y="150" font-family="Georgia, serif" font-size="48" fill="#1f3b2f">ART SUPPORT CHECK</text>
+  <text x="100" y="195" font-family="Arial, sans-serif" font-size="24" fill="#5f5a50">Eligibility first, detailed notice second, submit last.</text>
+  <rect x="100" y="245" width="290" height="220" rx="24" fill="#fff" stroke="#d96d3b" stroke-width="3"/>
+  <rect x="455" y="245" width="290" height="220" rx="24" fill="#fff" stroke="#255f4a" stroke-width="3"/>
+  <rect x="810" y="245" width="290" height="220" rx="24" fill="#fff" stroke="#7b5b2e" stroke-width="3"/>
+  <text x="130" y="295" font-family="Arial, sans-serif" font-size="20" fill="#d96d3b">STEP 1</text>
+  <text x="130" y="340" font-family="Georgia, serif" font-size="34" fill="#212121">Check</text>
+  <text x="130" y="378" font-family="Georgia, serif" font-size="34" fill="#212121">eligibility</text>
+  <text x="130" y="420" font-family="Arial, sans-serif" font-size="20" fill="#555">activity proof</text>
+  <text x="130" y="450" font-family="Arial, sans-serif" font-size="20" fill="#555">income level</text>
+  <text x="485" y="295" font-family="Arial, sans-serif" font-size="20" fill="#255f4a">STEP 2</text>
+  <text x="485" y="340" font-family="Georgia, serif" font-size="34" fill="#212121">Watch the</text>
+  <text x="485" y="378" font-family="Georgia, serif" font-size="34" fill="#212121">official notice</text>
+  <text x="485" y="420" font-family="Arial, sans-serif" font-size="20" fill="#555">dates may reopen</text>
+  <text x="485" y="450" font-family="Arial, sans-serif" font-size="20" fill="#555">rules may update</text>
+  <text x="840" y="295" font-family="Arial, sans-serif" font-size="20" fill="#7b5b2e">STEP 3</text>
+  <text x="840" y="340" font-family="Georgia, serif" font-size="34" fill="#212121">Use the</text>
+  <text x="840" y="378" font-family="Georgia, serif" font-size="34" fill="#212121">right route</text>
+  <text x="840" y="420" font-family="Arial, sans-serif" font-size="20" fill="#555">online system</text>
+  <text x="840" y="450" font-family="Arial, sans-serif" font-size="20" fill="#555">or postal filing</text>
+</svg>

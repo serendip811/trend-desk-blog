@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630" role="img" aria-labelledby="title desc">
+  <title id="title">Adoption online application guide</title>
+  <desc id="desc">Timeline image showing online start, training and review, and court approval.</desc>
+  <rect width="1200" height="630" fill="#eef4f1"/>
+  <rect x="55" y="60" width="1090" height="510" rx="40" fill="#fbfdfc" stroke="#b7cdc3" stroke-width="3"/>
+  <text x="95" y="140" font-family="Georgia, serif" font-size="48" fill="#24493d">ONLINE ADOPTION START</text>
+  <text x="95" y="185" font-family="Arial, sans-serif" font-size="24" fill="#5c6862">Start online, then verify training, review, and court steps.</text>
+  <line x1="150" y1="350" x2="1050" y2="350" stroke="#9bb6aa" stroke-width="6"/>
+  <circle cx="220" cy="350" r="54" fill="#2f7a5b"/>
+  <circle cx="600" cy="350" r="54" fill="#c78632"/>
+  <circle cx="980" cy="350" r="54" fill="#7a4d3a"/>
+  <text x="182" y="360" font-family="Arial, sans-serif" font-size="24" fill="#fff">01</text>
+  <text x="562" y="360" font-family="Arial, sans-serif" font-size="24" fill="#fff">02</text>
+  <text x="942" y="360" font-family="Arial, sans-serif" font-size="24" fill="#fff">03</text>
+  <text x="140" y="455" font-family="Georgia, serif" font-size="30" fill="#1f1f1f">Official intake</text>
+  <text x="140" y="490" font-family="Arial, sans-serif" font-size="20" fill="#555">check portal and current guidance</text>
+  <text x="495" y="455" font-family="Georgia, serif" font-size="30" fill="#1f1f1f">Training and review</text>
+  <text x="495" y="490" font-family="Arial, sans-serif" font-size="20" fill="#555">education, home study, documents</text>
+  <text x="890" y="455" font-family="Georgia, serif" font-size="30" fill="#1f1f1f">Court approval</text>
+  <text x="890" y="490" font-family="Arial, sans-serif" font-size="20" fill="#555">permit, report, aftercare</text>
+</svg>

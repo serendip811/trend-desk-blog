@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630" role="img" aria-labelledby="title desc">
+  <title id="title">Veteran spouse support guide</title>
+  <desc id="desc">Card-style guide showing who can apply, how much is paid, and where to apply.</desc>
+  <rect width="1200" height="630" fill="#f3f0ea"/>
+  <rect x="70" y="70" width="1060" height="490" rx="38" fill="#fffdf9" stroke="#d5cab9" stroke-width="3"/>
+  <text x="105" y="145" font-family="Georgia, serif" font-size="48" fill="#21384b">SUPPORT FOR SPOUSES</text>
+  <text x="105" y="190" font-family="Arial, sans-serif" font-size="24" fill="#5e5a54">Check age, hardship review, and local filing office.</text>
+  <rect x="105" y="245" width="300" height="215" rx="24" fill="#eef4fb" stroke="#5f87b5" stroke-width="3"/>
+  <rect x="450" y="245" width="300" height="215" rx="24" fill="#f9f2e8" stroke="#b98233" stroke-width="3"/>
+  <rect x="795" y="245" width="300" height="215" rx="24" fill="#eef6ef" stroke="#4f8a5b" stroke-width="3"/>
+  <text x="135" y="300" font-family="Arial, sans-serif" font-size="20" fill="#5f87b5">WHO</text>
+  <text x="135" y="345" font-family="Georgia, serif" font-size="34" fill="#202020">80+</text>
+  <text x="135" y="383" font-family="Georgia, serif" font-size="34" fill="#202020">eligible spouse</text>
+  <text x="135" y="420" font-family="Arial, sans-serif" font-size="20" fill="#555">hardship review applies</text>
+  <text x="480" y="300" font-family="Arial, sans-serif" font-size="20" fill="#b98233">HOW MUCH</text>
+  <text x="480" y="345" font-family="Georgia, serif" font-size="34" fill="#202020">150,000 KRW</text>
+  <text x="480" y="383" font-family="Georgia, serif" font-size="34" fill="#202020">monthly</text>
+  <text x="480" y="420" font-family="Arial, sans-serif" font-size="20" fill="#555">official page may update</text>
+  <text x="825" y="300" font-family="Arial, sans-serif" font-size="20" fill="#4f8a5b">WHERE</text>
+  <text x="825" y="345" font-family="Georgia, serif" font-size="34" fill="#202020">Local veterans</text>
+  <text x="825" y="383" font-family="Georgia, serif" font-size="34" fill="#202020">office</text>
+  <text x="825" y="420" font-family="Arial, sans-serif" font-size="20" fill="#555">file forms after checking status</text>
+</svg>
