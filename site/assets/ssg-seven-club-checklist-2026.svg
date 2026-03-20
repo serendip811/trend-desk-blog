@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630" role="img" aria-labelledby="title desc">
+  <title id="title">쓱7클럽 가입 체크리스트</title>
+  <desc id="desc">월 회비, 적립, 쿠폰, 중복 제한을 확인하는 안내 이미지</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" x2="1" y1="0" y2="1">
+      <stop offset="0%" stop-color="#fdf2e9"/>
+      <stop offset="100%" stop-color="#fff8f0"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="630" fill="url(#bg)"/>
+  <rect x="56" y="54" width="1088" height="522" rx="30" fill="#ffffff" stroke="#efc7a4" stroke-width="3"/>
+  <text x="90" y="130" fill="#9a4f1b" font-size="34" font-family="Apple SD Gothic Neo, Malgun Gothic, sans-serif" font-weight="700">쓱7클럽 가입 전 4가지</text>
+  <text x="90" y="190" fill="#1f2937" font-size="58" font-family="Apple SD Gothic Neo, Malgun Gothic, sans-serif" font-weight="800">월 회비보다</text>
+  <text x="90" y="258" fill="#1f2937" font-size="58" font-family="Apple SD Gothic Neo, Malgun Gothic, sans-serif" font-weight="800">적립과 중복 제한을 먼저 보기</text>
+  <rect x="90" y="320" width="300" height="86" rx="20" fill="#fff2e6"/>
+  <rect x="410" y="320" width="300" height="86" rx="20" fill="#fff2e6"/>
+  <rect x="730" y="320" width="300" height="86" rx="20" fill="#fff2e6"/>
+  <rect x="250" y="428" width="300" height="86" rx="20" fill="#fff2e6"/>
+  <rect x="570" y="428" width="380" height="86" rx="20" fill="#fff2e6"/>
+  <text x="112" y="372" fill="#7c3a10" font-size="30" font-family="Apple SD Gothic Neo, Malgun Gothic, sans-serif" font-weight="700">월 회비 확인</text>
+  <text x="438" y="372" fill="#7c3a10" font-size="30" font-family="Apple SD Gothic Neo, Malgun Gothic, sans-serif" font-weight="700">적립 대상 확인</text>
+  <text x="760" y="372" fill="#7c3a10" font-size="30" font-family="Apple SD Gothic Neo, Malgun Gothic, sans-serif" font-weight="700">쿠폰 조건 확인</text>
+  <text x="286" y="480" fill="#7c3a10" font-size="30" font-family="Apple SD Gothic Neo, Malgun Gothic, sans-serif" font-weight="700">티빙 중복 점검</text>
+  <text x="607" y="480" fill="#7c3a10" font-size="30" font-family="Apple SD Gothic Neo, Malgun Gothic, sans-serif" font-weight="700">유니버스 클럽 해지 여부 확인</text>
+ </svg>

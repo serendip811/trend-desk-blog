@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630" role="img" aria-labelledby="title desc">
+  <title id="title">삼성전자 배당금 확인 가이드</title>
+  <desc id="desc">기준일, 전자공고, 배당조회 순서를 정리한 안내 이미지</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" x2="1" y1="0" y2="1">
+      <stop offset="0%" stop-color="#edf5ff"/>
+      <stop offset="100%" stop-color="#ffffff"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="630" fill="url(#bg)"/>
+  <rect x="54" y="52" width="1092" height="526" rx="30" fill="#ffffff" stroke="#bfd6ff" stroke-width="3"/>
+  <text x="88" y="126" fill="#1346a0" font-size="34" font-family="Apple SD Gothic Neo, Malgun Gothic, sans-serif" font-weight="700">삼성전자 배당금 확인 순서</text>
+  <text x="88" y="190" fill="#0f172a" font-size="56" font-family="Apple SD Gothic Neo, Malgun Gothic, sans-serif" font-weight="800">기준일과 조회 공지는</text>
+  <text x="88" y="256" fill="#0f172a" font-size="56" font-family="Apple SD Gothic Neo, Malgun Gothic, sans-serif" font-weight="800">같은 날이 아닐 수 있습니다</text>
+  <rect x="88" y="326" width="250" height="146" rx="24" fill="#eef4ff"/>
+  <rect x="366" y="326" width="250" height="146" rx="24" fill="#eef4ff"/>
+  <rect x="644" y="326" width="250" height="146" rx="24" fill="#eef4ff"/>
+  <rect x="922" y="326" width="186" height="146" rx="24" fill="#eef4ff"/>
+  <text x="122" y="386" fill="#1d3d74" font-size="28" font-family="Apple SD Gothic Neo, Malgun Gothic, sans-serif" font-weight="700">1 기준일 공고</text>
+  <text x="400" y="386" fill="#1d3d74" font-size="28" font-family="Apple SD Gothic Neo, Malgun Gothic, sans-serif" font-weight="700">2 이사회 결의</text>
+  <text x="678" y="386" fill="#1d3d74" font-size="28" font-family="Apple SD Gothic Neo, Malgun Gothic, sans-serif" font-weight="700">3 조회 개시 공지</text>
+  <text x="956" y="386" fill="#1d3d74" font-size="28" font-family="Apple SD Gothic Neo, Malgun Gothic, sans-serif" font-weight="700">4 로그인</text>
+  <text x="122" y="428" fill="#1d3d74" font-size="28" font-family="Apple SD Gothic Neo, Malgun Gothic, sans-serif" font-weight="700">전자공고 확인</text>
+  <text x="400" y="428" fill="#1d3d74" font-size="28" font-family="Apple SD Gothic Neo, Malgun Gothic, sans-serif" font-weight="700">배당금 확정 확인</text>
+  <text x="678" y="428" fill="#1d3d74" font-size="28" font-family="Apple SD Gothic Neo, Malgun Gothic, sans-serif" font-weight="700">배당조회 열림 확인</text>
+  <text x="956" y="428" fill="#1d3d74" font-size="28" font-family="Apple SD Gothic Neo, Malgun Gothic, sans-serif" font-weight="700">내역 조회</text>
+  <text x="88" y="546" fill="#1346a0" font-size="28" font-family="Apple SD Gothic Neo, Malgun Gothic, sans-serif" font-weight="700">공식 IR 페이지와 배당조회 웹서비스를 함께 보기</text>
+</svg>

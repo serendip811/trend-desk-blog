@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630" role="img" aria-labelledby="title desc">
+  <title id="title">서울시 청년 부동산 교육 체크리스트</title>
+  <desc id="desc">대상, 교육 내용, 일정 공지 위치를 확인하는 안내 이미지</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" x2="1" y1="0" y2="1">
+      <stop offset="0%" stop-color="#eef7ff"/>
+      <stop offset="100%" stop-color="#f8fcff"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="630" fill="url(#bg)"/>
+  <rect x="54" y="50" width="1092" height="530" rx="30" fill="#ffffff" stroke="#b8d7f2" stroke-width="3"/>
+  <text x="88" y="126" fill="#0f4c81" font-size="34" font-family="Apple SD Gothic Neo, Malgun Gothic, sans-serif" font-weight="700">서울시 청년 부동산 무료교육</text>
+  <text x="88" y="188" fill="#0f172a" font-size="56" font-family="Apple SD Gothic Neo, Malgun Gothic, sans-serif" font-weight="800">신청 전에 먼저 볼 것</text>
+  <rect x="88" y="250" width="1020" height="92" rx="24" fill="#eef6fd"/>
+  <text x="118" y="306" fill="#1e3a5f" font-size="32" font-family="Apple SD Gothic Neo, Malgun Gothic, sans-serif" font-weight="700">대학생 · 사회초년생 · 국내외 유학생 대상인지 확인</text>
+  <rect x="88" y="364" width="490" height="128" rx="24" fill="#eef6fd"/>
+  <rect x="618" y="364" width="490" height="128" rx="24" fill="#eef6fd"/>
+  <text x="118" y="420" fill="#1e3a5f" font-size="30" font-family="Apple SD Gothic Neo, Malgun Gothic, sans-serif" font-weight="700">계약 전·중·후</text>
+  <text x="118" y="462" fill="#1e3a5f" font-size="30" font-family="Apple SD Gothic Neo, Malgun Gothic, sans-serif" font-weight="700">점검사항 교육인지 확인</text>
+  <text x="648" y="420" fill="#1e3a5f" font-size="30" font-family="Apple SD Gothic Neo, Malgun Gothic, sans-serif" font-weight="700">2026 일정은</text>
+  <text x="648" y="462" fill="#1e3a5f" font-size="30" font-family="Apple SD Gothic Neo, Malgun Gothic, sans-serif" font-weight="700">서울시 공식 공지 재확인</text>
+  <text x="88" y="552" fill="#0f4c81" font-size="28" font-family="Apple SD Gothic Neo, Malgun Gothic, sans-serif" font-weight="700">전세사기 예방 · 보증금 보호 · 등기부 확인 중심</text>
+</svg>
