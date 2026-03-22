@@ -12,6 +12,10 @@ LOG_FILE="$LOG_DIR/morning-codex-$TIMESTAMP.log"
 LAST_MESSAGE_FILE="$LOG_DIR/morning-codex-last-$TIMESTAMP.txt"
 RUN_STATUS="failed"
 RUN_STAGE="starting"
+ALLOWED_DIRTY_PATHS=(
+  "scripts/run_morning_codex.sh"
+  "scripts/morning_codex_prompt.md"
+)
 
 mkdir -p "$LOG_DIR"
 exec > >(tee -a "$LOG_FILE") 2>&1
@@ -107,6 +111,34 @@ push_with_retry() {
   return 1
 }
 
+get_blocking_git_status() {
+  local line
+  local path
+  local allowed_path
+  local is_allowed
+  local blocking_status=""
+
+  while IFS= read -r line || [ -n "$line" ]; do
+    [ -z "$line" ] && continue
+    path="${line:3}"
+    is_allowed=0
+
+    for allowed_path in "${ALLOWED_DIRTY_PATHS[@]}"; do
+      if [ "$path" = "$allowed_path" ]; then
+        is_allowed=1
+        break
+      fi
+    done
+
+    if [ "$is_allowed" -eq 0 ]; then
+      blocking_status+="$line"
+      blocking_status+=$'\n'
+    fi
+  done < <(git status --porcelain)
+
+  printf '%s' "$blocking_status"
+}
+
 echo "[$(date '+%Y-%m-%d %H:%M:%S')] Starting morning Codex run"
 
 if ! command -v codex >/dev/null 2>&1; then
@@ -126,10 +158,17 @@ if [ ! -f "$PROMPT_FILE" ]; then
   exit 1
 fi
 
-if [ -n "$(git status --porcelain)" ]; then
+BLOCKING_GIT_STATUS="$(get_blocking_git_status)"
+
+if [ -n "$BLOCKING_GIT_STATUS" ]; then
   echo "Repository is dirty. Aborting automated run to avoid mixing changes."
-  git status --short
+  printf '%s' "$BLOCKING_GIT_STATUS"
   exit 1
+fi
+
+if [ -n "$(git status --porcelain)" ]; then
+  echo "Ignoring local automation file changes and continuing."
+  git status --short
 fi
 
 BRANCH="$(git branch --show-current)"
