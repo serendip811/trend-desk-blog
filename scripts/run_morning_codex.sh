@@ -11,6 +11,7 @@ TIMESTAMP="$(date '+%Y%m%d-%H%M%S')"
 LOG_FILE="$LOG_DIR/morning-codex-$TIMESTAMP.log"
 LAST_MESSAGE_FILE="$LOG_DIR/morning-codex-last-$TIMESTAMP.txt"
 RUN_STATUS="failed"
+RUN_STAGE="starting"
 
 mkdir -p "$LOG_DIR"
 exec > >(tee -a "$LOG_FILE") 2>&1
@@ -37,7 +38,7 @@ notify_discord() {
     title="Trend Desk morning run failed"
   fi
 
-  body="$emoji $title\n- Host: $(hostname)\n- Repo: money\n- Time: $(date '+%Y-%m-%d %H:%M:%S')\n- Branch: ${BRANCH:-unknown}\n- Log: $LOG_FILE"
+  body="$emoji $title\n- Host: $(hostname)\n- Repo: money\n- Time: $(date '+%Y-%m-%d %H:%M:%S')\n- Branch: ${BRANCH:-unknown}\n- Stage: ${RUN_STAGE:-unknown}\n- Log: $LOG_FILE"
 
   if [ -f "$LAST_MESSAGE_FILE" ]; then
     body="$body\n- Last message: $LAST_MESSAGE_FILE"
@@ -88,6 +89,24 @@ finish() {
 
 trap finish EXIT
 
+push_with_retry() {
+  local attempt
+  local max_attempts=3
+
+  for attempt in 1 2 3; do
+    echo "Pushing branch $BRANCH (attempt $attempt/$max_attempts)"
+    if git push origin "$BRANCH"; then
+      return 0
+    fi
+    if [ "$attempt" -lt "$max_attempts" ]; then
+      echo "Push failed; retrying in 5 seconds"
+      sleep 5
+    fi
+  done
+
+  return 1
+}
+
 echo "[$(date '+%Y-%m-%d %H:%M:%S')] Starting morning Codex run"
 
 if ! command -v codex >/dev/null 2>&1; then
@@ -121,9 +140,11 @@ if [ -z "$BRANCH" ]; then
 fi
 
 echo "Pulling latest changes for $BRANCH"
+RUN_STAGE="pulling_latest_changes"
 git pull --ff-only origin "$BRANCH"
 
 echo "Running Codex with morning prompt"
+RUN_STAGE="running_codex"
 codex exec \
   --dangerously-bypass-approvals-and-sandbox \
   --cd "$ROOT" \
@@ -133,19 +154,23 @@ codex exec \
 
 if [ -z "$(git status --porcelain)" ]; then
   echo "No file changes produced by Codex. Nothing to commit."
+  RUN_STAGE="no_changes"
   exit 0
 fi
 
 echo "Staging generated changes"
+RUN_STAGE="staging_changes"
 git add -A
 
 COMMIT_MESSAGE="chore: publish morning trend posts ($(date '+%Y-%m-%d'))"
 echo "Creating commit: $COMMIT_MESSAGE"
+RUN_STAGE="creating_commit"
 git commit -m "$COMMIT_MESSAGE"
 
-echo "Pushing branch $BRANCH"
-git push origin "$BRANCH"
+RUN_STAGE="pushing_to_remote"
+push_with_retry
 
+RUN_STAGE="completed"
 echo "[$(date '+%Y-%m-%d %H:%M:%S')] Morning Codex run completed"
 echo "Log: $LOG_FILE"
 echo "Last message: $LAST_MESSAGE_FILE"
