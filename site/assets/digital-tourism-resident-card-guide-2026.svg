@@ -1,0 +1,58 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 720" role="img" aria-labelledby="title desc">
+  <title id="title">디지털 관광주민증 발급 가이드</title>
+  <desc id="desc">회원가입, 참여지역 확인, 쿠폰 사용, 반값여행 공지 확인 순서를 보여주는 설명 이미지</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" x2="1" y1="0" y2="1">
+      <stop offset="0%" stop-color="#f5fbff"/>
+      <stop offset="100%" stop-color="#f2faf0"/>
+    </linearGradient>
+    <linearGradient id="card" x1="0" x2="1" y1="0" y2="1">
+      <stop offset="0%" stop-color="#ffffff"/>
+      <stop offset="100%" stop-color="#fbfffc"/>
+    </linearGradient>
+    <style>
+      .title { font: 700 42px/1.2 sans-serif; fill: #17324d; }
+      .subtitle { font: 400 22px/1.5 sans-serif; fill: #4b5563; }
+      .label { font: 700 24px/1.2 sans-serif; fill: #17324d; }
+      .body { font: 400 20px/1.5 sans-serif; fill: #334155; }
+      .small { font: 600 18px/1.4 sans-serif; fill: #667085; }
+      .chip { font: 700 18px/1 sans-serif; fill: #0f5132; }
+    </style>
+  </defs>
+
+  <rect width="1200" height="720" rx="36" fill="url(#bg)"/>
+  <circle cx="1042" cy="116" r="88" fill="#dcecff" opacity=".8"/>
+  <circle cx="152" cy="598" r="108" fill="#def1df" opacity=".78"/>
+
+  <text x="80" y="104" class="title">디지털 관광주민증 발급 순서</text>
+  <text x="80" y="148" class="subtitle">반값여행 공지가 떠도 먼저 필요한 것은 발급과 지역별 혜택 확인입니다.</text>
+
+  <rect x="80" y="210" width="1040" height="380" rx="28" fill="url(#card)" stroke="#d7e3ea"/>
+
+  <rect x="120" y="270" width="220" height="240" rx="24" fill="#eef6ff" stroke="#cadbf0"/>
+  <text x="150" y="320" class="label">1. 회원가입</text>
+  <text x="150" y="362" class="body">만 14세 이상</text>
+  <text x="150" y="400" class="body">무료 이용</text>
+  <text x="150" y="452" class="small">본인인증 준비</text>
+
+  <rect x="380" y="270" width="220" height="240" rx="24" fill="#f0fbf2" stroke="#cae6d2"/>
+  <text x="410" y="320" class="label">2. 지역 확인</text>
+  <text x="410" y="362" class="body">참여지역 목록</text>
+  <text x="410" y="400" class="body">가맹점 혜택</text>
+  <text x="410" y="452" class="small">여행지와 맞는지 보기</text>
+
+  <rect x="640" y="270" width="220" height="240" rx="24" fill="#fff8ea" stroke="#efd8b0"/>
+  <text x="670" y="320" class="label">3. 쿠폰 사용</text>
+  <text x="670" y="362" class="body">직원 제시</text>
+  <text x="670" y="400" class="body">3km 쿠폰·QR</text>
+  <text x="670" y="452" class="small">현장 방식 확인</text>
+
+  <rect x="900" y="270" width="180" height="240" rx="24" fill="#fdf1f6" stroke="#edd1dc"/>
+  <text x="930" y="320" class="label">4. 공지 확인</text>
+  <text x="930" y="362" class="body">반값여행 예고</text>
+  <text x="930" y="400" class="body">이벤트 알림</text>
+  <text x="930" y="452" class="small">출발 전 재확인</text>
+
+  <rect x="356" y="610" width="488" height="56" rx="28" fill="#dff3e6"/>
+  <text x="600" y="647" text-anchor="middle" class="chip">발급 → 지역 확인 → 쿠폰 사용 → 반값여행 공지 확인</text>
+</svg>

@@ -1,0 +1,59 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 720" role="img" aria-labelledby="title desc">
+  <title id="title">국가장학금 2차 신청 후 체크리스트</title>
+  <desc id="desc">신청 상태, 가구원 동의, 서류 제출, 결과 확인을 순서대로 점검하는 안내 이미지</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" x2="1" y1="0" y2="1">
+      <stop offset="0%" stop-color="#f7f8ff"/>
+      <stop offset="100%" stop-color="#eef7f3"/>
+    </linearGradient>
+    <linearGradient id="card" x1="0" x2="1" y1="0" y2="1">
+      <stop offset="0%" stop-color="#ffffff"/>
+      <stop offset="100%" stop-color="#fbfdff"/>
+    </linearGradient>
+    <style>
+      .title { font: 700 42px/1.2 sans-serif; fill: #14213d; }
+      .subtitle { font: 400 22px/1.5 sans-serif; fill: #4b5563; }
+      .label { font: 700 24px/1.2 sans-serif; fill: #14213d; }
+      .body { font: 400 20px/1.5 sans-serif; fill: #334155; }
+      .small { font: 600 18px/1.4 sans-serif; fill: #667085; }
+      .chip { font: 700 18px/1 sans-serif; fill: #f8fafc; }
+    </style>
+  </defs>
+
+  <rect width="1200" height="720" rx="36" fill="url(#bg)"/>
+  <circle cx="1054" cy="130" r="84" fill="#e1e8ff" opacity=".82"/>
+  <circle cx="146" cy="610" r="112" fill="#def2e5" opacity=".76"/>
+
+  <text x="80" y="104" class="title">국가장학금 2차 신청 후 체크리스트</text>
+  <text x="80" y="148" class="subtitle">3월 하순에는 신청 여부보다 동의와 서류 상태 확인이 더 중요합니다.</text>
+
+  <rect x="80" y="210" width="1040" height="380" rx="28" fill="url(#card)" stroke="#d8e2ef"/>
+
+  <rect x="120" y="270" width="220" height="240" rx="24" fill="#eef5ff" stroke="#cad8f0"/>
+  <text x="150" y="320" class="label">1. 신청 상태</text>
+  <text x="150" y="362" class="body">접수 완료 여부</text>
+  <text x="150" y="400" class="body">재학생 2차 여부</text>
+  <text x="150" y="452" class="small">먼저 로그인해 보기</text>
+
+  <rect x="380" y="270" width="220" height="240" rx="24" fill="#f0fbf2" stroke="#c8e6d0"/>
+  <text x="410" y="320" class="label">2. 가구원 동의</text>
+  <text x="410" y="362" class="body">동의 완료 여부</text>
+  <text x="410" y="400" class="body">미완료 사유 확인</text>
+  <text x="410" y="452" class="small">심사 지연 방지</text>
+
+  <rect x="640" y="270" width="220" height="240" rx="24" fill="#fff7ea" stroke="#f1d7ad"/>
+  <text x="670" y="320" class="label">3. 서류 제출</text>
+  <text x="670" y="362" class="body">등본</text>
+  <text x="740" y="362" class="body">가족관계증명</text>
+  <text x="670" y="400" class="body">추가 안내 확인</text>
+  <text x="670" y="452" class="small">필요자만 제출</text>
+
+  <rect x="900" y="270" width="180" height="240" rx="24" fill="#fff0f0" stroke="#efcccc"/>
+  <text x="930" y="320" class="label">4. 결과 확인</text>
+  <text x="930" y="362" class="body">누리집</text>
+  <text x="930" y="400" class="body">상담 1599-2000</text>
+  <text x="930" y="452" class="small">추후 공지 재확인</text>
+
+  <rect x="378" y="610" width="444" height="56" rx="28" fill="#14213d"/>
+  <text x="600" y="647" text-anchor="middle" class="chip">신청 상태 → 가구원 동의 → 서류 → 결과 확인</text>
+</svg>
