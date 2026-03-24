@@ -2,39 +2,57 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>https://serendip811.github.io/trend-desk-blog/</loc>
-    <lastmod>2026-03-24</lastmod>
+    <lastmod>2026-03-25</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
   </url>
   <url>
     <loc>https://serendip811.github.io/trend-desk-blog/archive.html</loc>
-    <lastmod>2026-03-24</lastmod>
+    <lastmod>2026-03-25</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://serendip811.github.io/trend-desk-blog/categories/index.html</loc>
-    <lastmod>2026-03-24</lastmod>
+    <lastmod>2026-03-25</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://serendip811.github.io/trend-desk-blog/categories/policy.html</loc>
-    <lastmod>2026-03-24</lastmod>
+    <lastmod>2026-03-25</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://serendip811.github.io/trend-desk-blog/categories/digital-services.html</loc>
-    <lastmod>2026-03-24</lastmod>
+    <lastmod>2026-03-25</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://serendip811.github.io/trend-desk-blog/categories/travel.html</loc>
-    <lastmod>2026-03-23</lastmod>
+    <lastmod>2026-03-25</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://serendip811.github.io/trend-desk-blog/posts/small-business-bizplus-card-guide-2026.html</loc>
+    <lastmod>2026-03-25</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://serendip811.github.io/trend-desk-blog/posts/papajohns-app-renewal-event-guide-2026.html</loc>
+    <lastmod>2026-03-25</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://serendip811.github.io/trend-desk-blog/posts/naenara-travel-fair-support-guide-2026.html</loc>
+    <lastmod>2026-03-25</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
   </url>
   <url>
     <loc>https://serendip811.github.io/trend-desk-blog/posts/seoul-club-on-application-guide-2026.html</loc>
