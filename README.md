@@ -72,6 +72,7 @@ The blog itself now uses a small static-site generator:
   - an announcement card or schedule graphic
 - If an official screen is not available or not useful, create a simple original explainer image or diagram instead of leaving the article text-only.
 - Store article assets in `site/assets/`.
+- Use Korean text for any visible headings or labels inside original images.
 - If an image should be used for sharing metadata, set `image` and `image_alt` in the post front matter.
 - If an image helps the reader inside the article, place it directly in the body with HTML, for example:
 
