@@ -1,0 +1,34 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630" role="img" aria-labelledby="title desc">
+  <title id="title">통합돌봄 신청 체크리스트</title>
+  <desc id="desc">통합돌봄 신청 전에 대상, 접수 창구, 지역 공고를 확인하는 순서를 정리한 이미지</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#f4efe6"/>
+      <stop offset="100%" stop-color="#d9ead7"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="630" fill="url(#bg)"/>
+  <rect x="56" y="56" width="1088" height="518" rx="28" fill="#fffdf8"/>
+  <text x="88" y="128" fill="#1f3d2f" font-size="46" font-weight="700">통합돌봄 신청 전 확인할 것</text>
+  <text x="88" y="170" fill="#496355" font-size="24">2026년 전국 시행 기준으로 접수 창구와 지역 운영 여부를 먼저 확인</text>
+
+  <g font-size="28" fill="#193328" font-weight="700">
+    <rect x="88" y="214" width="1024" height="86" rx="18" fill="#e7f1e7"/>
+    <circle cx="128" cy="257" r="22" fill="#2f6b4f"/>
+    <text x="119" y="266" fill="#ffffff" font-size="24">1</text>
+    <text x="170" y="252">대상 확인</text>
+    <text x="170" y="284" font-size="22" font-weight="500" fill="#355746">노쇠, 장애, 질병, 퇴원 직후 등 통합 지원이 필요한지 점검</text>
+
+    <rect x="88" y="320" width="1024" height="86" rx="18" fill="#eef6ea"/>
+    <circle cx="128" cy="363" r="22" fill="#507d3d"/>
+    <text x="119" y="372" fill="#ffffff" font-size="24">2</text>
+    <text x="170" y="358">접수 창구 확인</text>
+    <text x="170" y="390" font-size="22" font-weight="500" fill="#355746">읍면동 주민센터, 국민건강보험공단 지사, 인정 기관 여부 확인</text>
+
+    <rect x="88" y="426" width="1024" height="86" rx="18" fill="#f3f7e8"/>
+    <circle cx="128" cy="469" r="22" fill="#7d8f3c"/>
+    <text x="119" y="478" fill="#ffffff" font-size="24">3</text>
+    <text x="170" y="464">내 지역 공고 확인</text>
+    <text x="170" y="496" font-size="22" font-weight="500" fill="#355746">시군구별 연계 서비스와 담당 부서가 다를 수 있어 최신 공지 재확인</text>
+  </g>
+</svg>

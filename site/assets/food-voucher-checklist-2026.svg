@@ -1,0 +1,36 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630" role="img" aria-labelledby="title desc">
+  <title id="title">농식품바우처 신청 체크리스트</title>
+  <desc id="desc">농식품바우처 신청 전 대상, 금액, 사용처를 확인하는 순서를 정리한 이미지</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#f7f3dc"/>
+      <stop offset="100%" stop-color="#dff0db"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="630" fill="url(#bg)"/>
+  <rect x="52" y="52" width="1096" height="526" rx="30" fill="#fffef7"/>
+  <text x="86" y="126" fill="#294b2a" font-size="46" font-weight="700">농식품바우처 신청 전에 볼 핵심 3가지</text>
+  <text x="86" y="168" fill="#587057" font-size="24">대상 요건, 가구원 수별 금액, 지정 사용처를 같이 확인해야 합니다</text>
+
+  <g font-size="27" fill="#244024">
+    <rect x="86" y="214" width="320" height="246" rx="24" fill="#edf6e6"/>
+    <text x="114" y="266" font-size="32" font-weight="700">대상</text>
+    <text x="114" y="316">생계급여 수급가구</text>
+    <text x="114" y="354">임산부·영유아·아동·청년</text>
+    <text x="114" y="392">포함 여부 확인</text>
+
+    <rect x="440" y="214" width="320" height="246" rx="24" fill="#f4f7df"/>
+    <text x="468" y="266" font-size="32" font-weight="700">금액</text>
+    <text x="468" y="316">1인 4만원</text>
+    <text x="468" y="354">4인 10만원</text>
+    <text x="468" y="392">10인 이상 18만7천원</text>
+
+    <rect x="794" y="214" width="320" height="246" rx="24" fill="#eef4d0"/>
+    <text x="822" y="266" font-size="32" font-weight="700">사용처</text>
+    <text x="822" y="316">지정 오프라인 매장</text>
+    <text x="822" y="354">지정 온라인 매장</text>
+    <text x="822" y="392">꾸러미 배송 여부 확인</text>
+  </g>
+
+  <text x="86" y="534" fill="#516251" font-size="24">매달 말 사용 기한과 주소지 변동 여부도 함께 다시 확인</text>
+</svg>
