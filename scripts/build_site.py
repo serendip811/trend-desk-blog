@@ -187,14 +187,17 @@ def json_ld_block(data: dict[str, object] | list[dict[str, object]] | None) -> s
 
 def publisher_schema(site: dict[str, object]) -> dict[str, object]:
     base_url = str(site["base_url"])
+    organization_name = str(site.get("organization_name", site["site_title"]))
     return {
         "@type": "Organization",
-        "name": str(site["site_title"]),
+        "name": organization_name,
+        "description": str(site.get("organization_description", site["default_description"])),
         "url": base_url.rstrip("/") + "/",
         "logo": {
             "@type": "ImageObject",
             "url": absolute_url(base_url, "assets/favicon.svg"),
         },
+        **({"sameAs": site.get("same_as", [])} if site.get("same_as") else {}),
     }
 
 
@@ -296,6 +299,7 @@ def build_head(
     canonical_url = absolute_url(base_url, canonical_path)
     image_url = absolute_url(base_url, og_image or str(site["default_og_image"]))
     image_alt = og_image_alt or resolved_title
+    site_language = str(site.get("site_language", "ko-KR"))
 
     extra = f"\n{extra_meta.rstrip()}" if extra_meta else ""
     structured_data_block = json_ld_block(structured_data)
@@ -304,6 +308,7 @@ def build_head(
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>{escape(resolved_title)}</title>
   <meta name="description" content="{escape(description)}">
+  <meta name="language" content="{escape(site_language)}">
   <meta name="robots" content="{escape(robots)}">
   <link rel="canonical" href="{escape(canonical_url)}">
   <meta property="og:type" content="{escape(og_type)}">
@@ -397,14 +402,18 @@ def render_page(site: dict[str, object], head: str, body: str) -> str:
 
 def build_home(site: dict[str, object], posts: list[Post], categories: dict[str, Category]) -> str:
     base_url = str(site["base_url"])
+    home_page_title = str(site.get("home_page_title", site["home_title"]))
+    home_description = str(site.get("home_description", site["default_description"]))
     listed_posts = [post for post in posts if post.listed]
     structured_data: list[dict[str, object]] = [
         {
             "@context": "https://schema.org",
             "@type": "WebSite",
             "name": str(site["site_title"]),
+            "alternateName": home_page_title,
             "url": base_url.rstrip("/") + "/",
             "description": str(site["default_description"]),
+            "inLanguage": str(site.get("site_language", "ko-KR")),
             "publisher": publisher_schema(site),
         },
         {
@@ -412,8 +421,8 @@ def build_home(site: dict[str, object], posts: list[Post], categories: dict[str,
             "@type": "CollectionPage",
             "name": str(site["home_title"]),
             "url": base_url.rstrip("/") + "/",
-            "description": str(site["home_description"]),
-            "inLanguage": "ko-KR",
+            "description": home_description,
+            "inLanguage": str(site.get("site_language", "ko-KR")),
             "publisher": publisher_schema(site),
             "image": absolute_url(base_url, str(site["default_og_image"])),
             "isPartOf": {"@type": "WebSite", "name": str(site["site_title"]), "url": base_url.rstrip("/") + "/"},
@@ -427,8 +436,8 @@ def build_home(site: dict[str, object], posts: list[Post], categories: dict[str,
     head = build_head(
         site=site,
         prefix="",
-        page_title=str(site["home_title"]),
-        description=str(site["default_description"]),
+        page_title=home_page_title,
+        description=home_description,
         canonical_path="/",
         structured_data=structured_data,
     )

@@ -1,13 +1,20 @@
 {
   "site_title": "Trend Desk",
   "base_url": "https://serendip811.github.io/trend-desk-blog",
+  "site_language": "ko-KR",
   "tagline": "생활에 바로 도움이 되는 정보를 차분하게 정리합니다.",
   "footer_text": "생활에 바로 연결되는 정보와 정리를 차곡차곡 기록합니다.",
-  "default_description": "지원 제도, 생활 정보, 여행, 디지털 서비스처럼 한국어 검색 수요가 큰 주제를 정리하는 블로그",
+  "default_description": "지원금 신청, 생활 제도, 여행 혜택, 디지털 서비스 사용법을 공식 자료 기준으로 정리하는 한국어 실용 정보 블로그",
   "default_og_image": "assets/og-cover.svg",
+  "organization_name": "Trend Desk",
+  "organization_description": "한국어 검색 수요가 큰 생활 정보, 지원 제도, 여행 혜택, 디지털 서비스 사용법을 공식 자료 기준으로 정리하는 콘텐츠 사이트",
+  "same_as": [
+    "https://github.com/serendip811/trend-desk-blog"
+  ],
   "home_kicker": "Trend Desk Feed",
+  "home_page_title": "지원금·생활정보·디지털 서비스 실사용 가이드",
   "home_title": "지금 읽을 만한 생활 정보와 실사용 가이드를 빠르게 훑는 피드",
-  "home_description": "GeekNews처럼 리스트 중심으로 최근 글을 바로 확인하고, 필요한 글만 들어가서 자세히 읽을 수 있게 구성했습니다.",
+  "home_description": "지원금 신청, 생활 제도, 여행 혜택, 디지털 서비스 사용법처럼 한국어 검색 수요가 큰 주제를 공식 자료 기준으로 정리합니다.",
   "categories": [
     {
       "slug": "policy",
