@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630" role="img" aria-labelledby="title desc">
+  <title id="title">서울 반려동물 시민학교 신청 안내</title>
+  <desc id="desc">교육 종류와 무료 신청 포인트를 정리한 카드형 이미지</desc>
+  <rect width="1200" height="630" fill="#f6efe4"/>
+  <rect x="60" y="60" width="1080" height="510" rx="36" fill="#fffaf2" stroke="#d7c4aa" stroke-width="3"/>
+  <text x="96" y="138" font-family="Pretendard, Apple SD Gothic Neo, Noto Sans KR, sans-serif" font-size="52" font-weight="700" fill="#28474c">서울 반려동물 시민학교</text>
+  <text x="96" y="186" font-family="Pretendard, Apple SD Gothic Neo, Noto Sans KR, sans-serif" font-size="28" fill="#5d5a56">무료 교육 신청 전 세 가지만 먼저 확인하세요</text>
+  <rect x="96" y="246" width="296" height="220" rx="24" fill="#eef7f3" stroke="#5b9876" stroke-width="3"/>
+  <rect x="452" y="246" width="296" height="220" rx="24" fill="#f5efe7" stroke="#b78348" stroke-width="3"/>
+  <rect x="808" y="246" width="296" height="220" rx="24" fill="#eef2fb" stroke="#6682bb" stroke-width="3"/>
+  <text x="124" y="302" font-family="Pretendard, Apple SD Gothic Neo, Noto Sans KR, sans-serif" font-size="24" font-weight="700" fill="#5b9876">교육 종류</text>
+  <text x="124" y="352" font-family="Pretendard, Apple SD Gothic Neo, Noto Sans KR, sans-serif" font-size="34" font-weight="700" fill="#1d2a24">사회화</text>
+  <text x="124" y="394" font-family="Pretendard, Apple SD Gothic Neo, Noto Sans KR, sans-serif" font-size="34" font-weight="700" fill="#1d2a24">산책</text>
+  <text x="124" y="436" font-family="Pretendard, Apple SD Gothic Neo, Noto Sans KR, sans-serif" font-size="34" font-weight="700" fill="#1d2a24">행동교정</text>
+  <text x="480" y="302" font-family="Pretendard, Apple SD Gothic Neo, Noto Sans KR, sans-serif" font-size="24" font-weight="700" fill="#b78348">모집 방식</text>
+  <text x="480" y="352" font-family="Pretendard, Apple SD Gothic Neo, Noto Sans KR, sans-serif" font-size="34" font-weight="700" fill="#2d241a">7월까지</text>
+  <text x="480" y="394" font-family="Pretendard, Apple SD Gothic Neo, Noto Sans KR, sans-serif" font-size="34" font-weight="700" fill="#2d241a">선착순</text>
+  <text x="480" y="436" font-family="Pretendard, Apple SD Gothic Neo, Noto Sans KR, sans-serif" font-size="28" fill="#5e544a">서울시 예약 시스템 확인</text>
+  <text x="836" y="302" font-family="Pretendard, Apple SD Gothic Neo, Noto Sans KR, sans-serif" font-size="24" font-weight="700" fill="#6682bb">운영 장소</text>
+  <text x="836" y="352" font-family="Pretendard, Apple SD Gothic Neo, Noto Sans KR, sans-serif" font-size="34" font-weight="700" fill="#1d2430">마포 · 동대문</text>
+  <text x="836" y="394" font-family="Pretendard, Apple SD Gothic Neo, Noto Sans KR, sans-serif" font-size="34" font-weight="700" fill="#1d2430">공원 회차도 확인</text>
+  <text x="96" y="528" font-family="Pretendard, Apple SD Gothic Neo, Noto Sans KR, sans-serif" font-size="26" fill="#574c42">회차와 마감 상태는 신청 직전 공식 페이지에서 다시 확인</text>
+</svg>
