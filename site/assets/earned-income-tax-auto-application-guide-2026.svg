@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630" role="img" aria-labelledby="title desc">
+  <title id="title">근로장려금 자동신청 체크리스트</title>
+  <desc id="desc">근로장려금 자동신청 대상과 직접신청 필요 상황을 정리한 한국어 안내 이미지</desc>
+  <rect width="1200" height="630" fill="#f6f3ea"/>
+  <rect x="40" y="40" width="1120" height="550" rx="28" fill="#fffdf8" stroke="#d8c9a7" stroke-width="4"/>
+  <text x="80" y="125" fill="#3f3425" font-size="46" font-family="'Apple SD Gothic Neo','Noto Sans KR',sans-serif" font-weight="700">근로장려금 자동신청 체크리스트</text>
+  <text x="80" y="170" fill="#7a6545" font-size="24" font-family="'Apple SD Gothic Neo','Noto Sans KR',sans-serif">2026년에는 모든 연령으로 확대됐지만, 안내문과 사전동의가 핵심입니다.</text>
+  <rect x="80" y="220" width="320" height="270" rx="20" fill="#fff3d8"/>
+  <rect x="440" y="220" width="320" height="270" rx="20" fill="#eef6e8"/>
+  <rect x="800" y="220" width="320" height="270" rx="20" fill="#e9f1fb"/>
+  <text x="110" y="275" fill="#6b4b12" font-size="28" font-family="'Apple SD Gothic Neo','Noto Sans KR',sans-serif" font-weight="700">자동신청 출발점</text>
+  <text x="110" y="325" fill="#3f3425" font-size="22" font-family="'Apple SD Gothic Neo','Noto Sans KR',sans-serif">• 국세청 안내문 수령</text>
+  <text x="110" y="365" fill="#3f3425" font-size="22" font-family="'Apple SD Gothic Neo','Noto Sans KR',sans-serif">• 신청 때 사전동의</text>
+  <text x="110" y="405" fill="#3f3425" font-size="22" font-family="'Apple SD Gothic Neo','Noto Sans KR',sans-serif">• 소득·재산 요건 충족</text>
+  <text x="470" y="275" fill="#3a5d23" font-size="28" font-family="'Apple SD Gothic Neo','Noto Sans KR',sans-serif" font-weight="700">직접신청이 필요한 경우</text>
+  <text x="470" y="325" fill="#2f3528" font-size="22" font-family="'Apple SD Gothic Neo','Noto Sans KR',sans-serif">• 안내문을 못 받은 경우</text>
+  <text x="470" y="365" fill="#2f3528" font-size="22" font-family="'Apple SD Gothic Neo','Noto Sans KR',sans-serif">• 자동신청 사전동의가 없는 경우</text>
+  <text x="470" y="405" fill="#2f3528" font-size="22" font-family="'Apple SD Gothic Neo','Noto Sans KR',sans-serif">• 요건 변동이 있는 경우</text>
+  <text x="830" y="275" fill="#1f4d73" font-size="28" font-family="'Apple SD Gothic Neo','Noto Sans KR',sans-serif" font-weight="700">확인 경로</text>
+  <text x="830" y="325" fill="#243240" font-size="22" font-family="'Apple SD Gothic Neo','Noto Sans KR',sans-serif">• 홈택스</text>
+  <text x="830" y="365" fill="#243240" font-size="22" font-family="'Apple SD Gothic Neo','Noto Sans KR',sans-serif">• 손택스</text>
+  <text x="830" y="405" fill="#243240" font-size="22" font-family="'Apple SD Gothic Neo','Noto Sans KR',sans-serif">• 장려금 상담센터</text>
+  <text x="80" y="545" fill="#7a6545" font-size="22" font-family="'Apple SD Gothic Neo','Noto Sans KR',sans-serif">지급액과 신청 가능 여부는 귀속연도와 심사 결과에 따라 달라질 수 있습니다.</text>
+</svg>
