@@ -1,0 +1,30 @@
+<svg width="1200" height="720" viewBox="0 0 1200 720" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="1200" height="720" fill="#EDF3F6"/>
+  <rect x="40" y="40" width="1120" height="640" rx="28" fill="#FCFEFF" stroke="#C8D7DF" stroke-width="4"/>
+  <text x="80" y="108" fill="#0F2430" font-family="Pretendard, Apple SD Gothic Neo, sans-serif" font-size="40" font-weight="700">고교생 여객선 이동 확인 순서</text>
+  <text x="80" y="148" fill="#4F6570" font-family="Pretendard, Apple SD Gothic Neo, sans-serif" font-size="22">학교 단체 이동은 신청 안내 확인 뒤 운항정보와 예보를 이어서 봐야 합니다.</text>
+
+  <rect x="80" y="198" width="300" height="164" rx="22" fill="#DDECF3"/>
+  <text x="108" y="244" fill="#18445E" font-family="Pretendard, Apple SD Gothic Neo, sans-serif" font-size="28" font-weight="700">1. 신청 안내</text>
+  <text x="108" y="286" fill="#22333C" font-family="Pretendard, Apple SD Gothic Neo, sans-serif" font-size="21">최신 게시일 확인</text>
+  <text x="108" y="318" fill="#22333C" font-family="Pretendard, Apple SD Gothic Neo, sans-serif" font-size="21">신청서 첨부파일 점검</text>
+  <text x="108" y="350" fill="#22333C" font-family="Pretendard, Apple SD Gothic Neo, sans-serif" font-size="21">학교 내부 담당자 지정</text>
+
+  <rect x="450" y="198" width="300" height="164" rx="22" fill="#E7F2E5"/>
+  <text x="478" y="244" fill="#2C5C2D" font-family="Pretendard, Apple SD Gothic Neo, sans-serif" font-size="28" font-weight="700">2. 운항 정보</text>
+  <text x="478" y="286" fill="#22333C" font-family="Pretendard, Apple SD Gothic Neo, sans-serif" font-size="21">항로와 시간 확인</text>
+  <text x="478" y="318" fill="#22333C" font-family="Pretendard, Apple SD Gothic Neo, sans-serif" font-size="21">실시간 운항현황 점검</text>
+  <text x="478" y="350" fill="#22333C" font-family="Pretendard, Apple SD Gothic Neo, sans-serif" font-size="21">대체 일정도 준비</text>
+
+  <rect x="820" y="198" width="280" height="164" rx="22" fill="#F4E7D9"/>
+  <text x="848" y="244" fill="#8A4D14" font-family="Pretendard, Apple SD Gothic Neo, sans-serif" font-size="28" font-weight="700">3. 전날 예보</text>
+  <text x="848" y="286" fill="#22333C" font-family="Pretendard, Apple SD Gothic Neo, sans-serif" font-size="21">내일의 운항예보 확인</text>
+  <text x="848" y="318" fill="#22333C" font-family="Pretendard, Apple SD Gothic Neo, sans-serif" font-size="21">보호자 연락체계 점검</text>
+  <text x="848" y="350" fill="#22333C" font-family="Pretendard, Apple SD Gothic Neo, sans-serif" font-size="21">학생 안전수칙 공지</text>
+
+  <rect x="80" y="430" width="1020" height="190" rx="24" fill="#143347"/>
+  <text x="116" y="486" fill="#FFFFFF" font-family="Pretendard, Apple SD Gothic Neo, sans-serif" font-size="28" font-weight="700">핵심 메모</text>
+  <text x="116" y="528" fill="#FFFFFF" font-family="Pretendard, Apple SD Gothic Neo, sans-serif" font-size="24">신청만 끝내지 말고 출발 전날 운항예보를 다시 보는 흐름이 중요합니다.</text>
+  <text x="116" y="566" fill="#FFFFFF" font-family="Pretendard, Apple SD Gothic Neo, sans-serif" font-size="24">세부 운영 범위와 제출서류는 최신 KOMSA 안내문이 기준입니다.</text>
+  <text x="116" y="604" fill="#FFFFFF" font-family="Pretendard, Apple SD Gothic Neo, sans-serif" font-size="24">학교와 보호자는 같은 공식 경로를 보고 준비 상태를 맞추는 편이 안전합니다.</text>
+</svg>

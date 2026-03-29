@@ -1,0 +1,30 @@
+<svg width="1200" height="720" viewBox="0 0 1200 720" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="1200" height="720" fill="#F5F1EA"/>
+  <rect x="40" y="40" width="1120" height="640" rx="28" fill="#FFFDFC" stroke="#DED5C8" stroke-width="4"/>
+  <text x="80" y="108" fill="#211912" font-family="Pretendard, Apple SD Gothic Neo, sans-serif" font-size="40" font-weight="700">1인가구 동아리 지원 확인 순서</text>
+  <text x="80" y="148" fill="#6D6258" font-family="Pretendard, Apple SD Gothic Neo, sans-serif" font-size="22">모집 대상, 인원 요건, 제출서류를 먼저 맞추면 다음 차수도 준비가 쉬워집니다.</text>
+
+  <rect x="80" y="198" width="300" height="164" rx="22" fill="#F0E5D9"/>
+  <text x="108" y="244" fill="#7C4C1D" font-family="Pretendard, Apple SD Gothic Neo, sans-serif" font-size="28" font-weight="700">대상 확인</text>
+  <text x="108" y="286" fill="#2B2B2B" font-family="Pretendard, Apple SD Gothic Neo, sans-serif" font-size="21">서울 거주 또는 재직</text>
+  <text x="108" y="318" fill="#2B2B2B" font-family="Pretendard, Apple SD Gothic Neo, sans-serif" font-size="21">1인가구 조건 확인</text>
+  <text x="108" y="350" fill="#2B2B2B" font-family="Pretendard, Apple SD Gothic Neo, sans-serif" font-size="21">3인 이상 그룹 구성</text>
+
+  <rect x="450" y="198" width="300" height="164" rx="22" fill="#E5EFE8"/>
+  <text x="478" y="244" fill="#2B5A39" font-family="Pretendard, Apple SD Gothic Neo, sans-serif" font-size="28" font-weight="700">활동 계획</text>
+  <text x="478" y="286" fill="#2B2B2B" font-family="Pretendard, Apple SD Gothic Neo, sans-serif" font-size="21">건강 증진 주제</text>
+  <text x="478" y="318" fill="#2B2B2B" font-family="Pretendard, Apple SD Gothic Neo, sans-serif" font-size="21">문화예술 활동 주제</text>
+  <text x="478" y="350" fill="#2B2B2B" font-family="Pretendard, Apple SD Gothic Neo, sans-serif" font-size="21">대표자 계획서 준비</text>
+
+  <rect x="820" y="198" width="280" height="164" rx="22" fill="#E7EDF7"/>
+  <text x="848" y="244" fill="#25496B" font-family="Pretendard, Apple SD Gothic Neo, sans-serif" font-size="28" font-weight="700">서류 준비</text>
+  <text x="848" y="286" fill="#2B2B2B" font-family="Pretendard, Apple SD Gothic Neo, sans-serif" font-size="21">신청서와 동의서</text>
+  <text x="848" y="318" fill="#2B2B2B" font-family="Pretendard, Apple SD Gothic Neo, sans-serif" font-size="21">등본</text>
+  <text x="848" y="350" fill="#2B2B2B" font-family="Pretendard, Apple SD Gothic Neo, sans-serif" font-size="21">신청자 리스트</text>
+
+  <rect x="80" y="430" width="1020" height="190" rx="24" fill="#191512"/>
+  <text x="116" y="486" fill="#FFFFFF" font-family="Pretendard, Apple SD Gothic Neo, sans-serif" font-size="28" font-weight="700">다음 차수 대비</text>
+  <text x="116" y="528" fill="#FFFFFF" font-family="Pretendard, Apple SD Gothic Neo, sans-serif" font-size="24">개인 지원인지 그룹 공모인지 먼저 구분합니다.</text>
+  <text x="116" y="566" fill="#FFFFFF" font-family="Pretendard, Apple SD Gothic Neo, sans-serif" font-size="24">대표자 한 명이 서류를 묶어 제출하는 구조인지 확인합니다.</text>
+  <text x="116" y="604" fill="#FFFFFF" font-family="Pretendard, Apple SD Gothic Neo, sans-serif" font-size="24">마감일과 접수 사이트는 다음 공고에서 다시 확인해야 합니다.</text>
+</svg>
